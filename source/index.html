@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
+    <linl href="css/normalize.css" rel="stylesheet">
   </head>
 
   <body class="page__body page-body">
@@ -15,13 +17,13 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-menu">
           <li class="site-menu__item site-menu__item--active">
-            <a>Главная</a>
+            <a class=" ">Главная</a>
           </li>
           <li class="site-menu__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-menu__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-menu__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-menu__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -29,17 +31,18 @@
 
     <main class="page-body__main page-main">
 
-      <h1 class="page-main__title">Функциональное питание для котов</h1>
+      <h1 class="visually-hidden">Питание для котов</h1>
 
-      <section class="program">
+      <section class="page-main__program program">
         <div class="program__wrapper container">
-          <h2 class="visually-hidden">Подбор питания для котов</h2>
+          <h2 class="program__wrapper-title">Функциональное питание для котов</h2>
           <p class="program__text">Занялся собой? Займись котом!</p>
+          <img src="/img/index-can-mobile.png" width="280" height="270">
           <a class="program__link button" href="#">Подобрать программу</a>
         </div>
       </section>
 
-      <section class="program-type program-type--slimming container">
+      <section class="page-main__program-type program-type program-type--slimming container">
         <h2 class="program-type__title">Похудение</h2>
         <p class="program-type__text">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
@@ -47,7 +50,7 @@
         <a class="program-type__link" href="#">каталог slim</a>
       </section>
 
-      <section class="program-type program-type--weight-gain container">
+      <section class="page-main__program-type program-type program-type--weight-gain container">
         <h2 class="program-type__title">Набор массы</h2>
         <p class="program-type__text">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -55,7 +58,7 @@
         <a class="program-type__link" href="#">каталог pro</a>
       </section>
 
-      <section class="advantages container">
+      <section class=" page-main__advantages advantages container">
         <h2 class="advantages__title title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -73,7 +76,7 @@
         </ul>
       </section>
 
-      <section class="example">
+      <section class="page-main__example example">
         <div class="example__wrapper container">
           <div class="example__container">
             <h2 class="example__title title">Живой пример</h2>
@@ -90,15 +93,15 @@
           </div>
           <div class="example__it-was-after">
             <div class="example__image">
-              <img class="example__image-it-was" src="https://via.placeholder.com/311x232" width="311" height="232" alt="до нашего питания">
-              <img class="example__image-after" src="https://via.placeholder.com/251x240" width="251" height="240" alt="после нашего питания">
+              <img class="example__image-it-was" src="img/before-mobile.png" width="311" height="232" alt="до нашего питания">
+              <img class="example__image-after" src="img/after-mobile.png" width="251" height="240" alt="после нашего питания">
             </div>
             <div class="example__toggle toggle-controls">
-              <button class="toggle-controls__it-was" type="button">Было</button>
+              <button class="toggle-controls__it-was-after" type="button">Было</button>
               <div class="toggle-controls__scale">
                 <div class="toggle-controls__bar"></div>
               </div>
-              <button class="toggle-controls__after" type="button">Стало</button>
+              <button class="toggle-controls__it-was-after" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -106,7 +109,7 @@
     </main>
 
     <footer class="page-body__footer page-footer">
-      <div class="page-footer__address container">
+      <div class="page-footer__address address container">
         <p class="page-footer__slogan">
           приглашаем к сотрудничеству дилеров!
         </p>
@@ -116,12 +119,12 @@
           Санкт-Петербург
         </p>
       </div>
-      <img class="page-footer__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="page-footer__map" src="/img/location.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       <div class="page-footer__container container">
         <a class="page-footer__logo">
           <img class="page-footer__logo-image logo-footer" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип «Кэт энерджи»">
         </a>
-        <ul class="page-footer__social-list">
+        <ul class="page-footer__social-list social-list">
           <li class="page-footer__social-item">
             <a class="page-footer__social-link page-footer__social-link--vkontakte" href="#"><span class="visually-hidden">Мы в контакте</span></a>
           </li>
