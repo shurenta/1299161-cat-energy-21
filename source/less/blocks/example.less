@@ -1,13 +1,24 @@
-.example__description {
-  font-family: @oswald;
-  font-size: 24px;
-  line-height: 24px;
-  color: @basic-black;
+@media (min-width: @tablet-width) {
+  .example__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-.example__definition {
-  font-size: 12px;
-  line-height: 12px;
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .example__container {
+    display: block;
+  }
+
+  .example__text {
+    width: 436px;
+  }
 }
 
 .example__expenses {

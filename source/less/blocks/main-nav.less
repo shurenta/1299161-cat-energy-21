@@ -1,0 +1,19 @@
+.main-nav__list {
+  outline: 5px solid red;
+  outline-offset: -5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 478px;
+  }
+}

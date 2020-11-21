@@ -4,14 +4,52 @@
   background-image: url("../img/cat-index.png");
   background-repeat: no-repeat;
   background-size: 320px 302px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 }
 
 .program__wrapper-title {
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @basic-black;
+  }
 }
 
 .program__text {
   text-transform: uppercase;
   line-height: 14px;
+
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @basic-black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program__image {
+    width: 709px;
+    height: 609px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .program__image {
+    width: 552px;
+    height: 499px;
+    display: block;
+    margin: 0 auto;
+  }
 }

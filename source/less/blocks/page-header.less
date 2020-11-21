@@ -1,3 +1,37 @@
+.page-header {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  outline: 5px solid red;
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    width: 707px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
 .page-header__main-nav {
   color: @basic-black;
   font-family: @oswald;
@@ -5,6 +39,16 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  outline: 5px solid red;
-  outline-offset: -5px;
+}
+
+.page-header__logo-image {
+  height: 39px;
+
+  @media (min-width: @tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 60px;
+  }
 }
