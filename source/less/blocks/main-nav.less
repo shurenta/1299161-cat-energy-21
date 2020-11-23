@@ -1,19 +1,25 @@
 .main-nav__list {
-  outline: 5px solid red;
+  width: 320px;
+  text-align: center;
+  outline: 5px solid green;
   outline-offset: -5px;
   list-style: none;
   margin: 0;
   padding: 0;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .main-nav__list {
     display: flex;
     justify-content: space-between;
     width: 440px;
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: 478px;
     display: flex;
     justify-content: space-between;
-    width: 478px;
   }
 }

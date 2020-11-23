@@ -2,16 +2,21 @@
   outline: 5px solid red;
   outline-offset: -5px;
   width: 280px;
-  margin: 0 auto;
+  padding: 0 20px;
   background-color: @basic_grey;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .program-type {
     width: 708px;
+    padding: 0 30px;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    margin: 0 0;
+@media (min-width: @desktop-width) {
+  .program-type {
     width: 570px;
+    padding: 0;
   }
 }
 
