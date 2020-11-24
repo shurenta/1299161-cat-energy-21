@@ -8,13 +8,15 @@
   </head>
 
   <body class="page__body page-body">
-    <div class="container-header">
+    <!-- <div class="container-header"> -->
       <header class="page-body__header page-header">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image logo-header" src="https://via.placeholder.com/191x37" width="190" height="39" alt="Логотип «Кэт энерджи»">
-        </a>
-        <nav class="page-header__main-nav main-nav">
+        <div class="page_header__wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image logo-header" src="https://via.placeholder.com/191x37" width="190" height="39" alt="Логотип «Кэт энерджи»">
+          </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="page-header__main-nav main-nav">
           <ul class="main-nav__list site-menu">
             <li class="site-menu__item site-menu__item--active">
               <a class="site-menu__link">Главная</a>
@@ -28,7 +30,7 @@
           </ul>
         </nav>
       </header>
-    </div>
+    <!-- </div> -->
     <main class="page-body__main page-main">
 
       <h1 class="visually-hidden">Питание для котов</h1>
@@ -101,19 +103,19 @@
             </div>
           </div>
 
-          <div class="example__it-was-after">
-            <div class="example__image">
-              <img class="example__image-it-was" src="img/before-mobile.png" width="311" height="232" alt="до нашего питания">
-              <img class="example__image-after" src="img/after-mobile.png" width="251" height="240" alt="после нашего питания">
-            </div>
-            <div class="example__toggle toggle-controls">
-              <button class="toggle-controls__it-was-after" type="button">Было</button>
-              <div class="toggle-controls__scale">
-                <div class="toggle-controls__bar"></div>
-              </div>
-              <button class="toggle-controls__it-was-after" type="button">Стало</button>
-            </div>
+
+          <div class="example__image">
+            <img class="example__image-it-was" src="img/before-mobile.png" width="311" height="232" alt="до нашего питания">
+            <img class="example__image-after" src="img/after-mobile.png" width="251" height="240" alt="после нашего питания">
           </div>
+          <div class="example__toggle toggle-controls">
+            <button class="toggle-controls__it-was-after" type="button">Было</button>
+            <div class="toggle-controls__scale">
+              <div class="toggle-controls__bar"></div>
+            </div>
+            <button class="toggle-controls__it-was-after" type="button">Стало</button>
+          </div>
+
         </div>
       </section>
     </main>
