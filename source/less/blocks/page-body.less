@@ -1,5 +1,15 @@
 .page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 
-  outline: 5px solid yellow;
-  outline-offset: -5px;
+@media (min-width: @desktop-width) {
+  .page-body {
+    background-image: url("../img/cat-index.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 720px 694px;
+  }
 }

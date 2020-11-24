@@ -1,17 +1,40 @@
-.example__description {
-  font-family: @oswald;
-  font-size: 24px;
-  line-height: 24px;
-  color: @basic-black;
-}
-
-.example__definition {
-  font-size: 12px;
-  line-height: 12px;
+.example__text {
+  margin: 0;
 }
 
 .example__expenses {
+  width: 174px;
   font-family: @oswald;
   line-height: 20px;
   color: @basic-black;
+  margin: 0;
+  align-self: center;
+}
+
+
+@media (min-width: @tablet-width) {
+  .example__result-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .example__result-container {
+    display: block;
+  }
+
+  .example__container {
+    display: block;
+  }
+
+  .example__text {
+    width: 436px;
+  }
 }

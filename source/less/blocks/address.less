@@ -1,0 +1,26 @@
+.address__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .address__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    position: relative;
+    min-height: 400px;
+  }
+
+  .address__wrapper {
+    width: 570px;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    background-color: @basic-white;
+  }
+}
