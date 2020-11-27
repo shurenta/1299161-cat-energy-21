@@ -1,5 +1,4 @@
 .form {
-  width: 320px;
   margin: 0 auto;
   font-family: @oswald;
   font-size: 16px;
@@ -7,35 +6,65 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  outline: 5px solid red;
-  outline-offset: -5px;
+}
+
+.form__group-grid {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form__radio-grid {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .form__group {
   border: none;
-  border-bottom: 1px solid black;
-  padding: 0 0;
+  padding: 0 20px;
 }
 
-.form--grid {
-  padding: 0 20px;
+.form__grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.form__grid--padding {
+  padding-bottom: 0;
+}
+
+.form__group--padding {
+  padding-bottom: 27px;
 }
 
 .form--input {
   flex-grow: 1;
-  height: 45px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.form__group-radio {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.form__border {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form__program {
+  margin: 0;
 }
 
 .form__label {
   padding-right: 16px;
   align-self: center;
-}
-
-.form__program {
-  padding: 0 20px;
 }
 
 .form__label-radio {
@@ -46,17 +75,12 @@
   color: @basic-black;
   font-size: 24px;
   line-height: 26px;
-  padding: 0 20px;
-  padding-bottom: 17px;
-  padding-top: 29px;
+  padding: 0;
+  padding-bottom: 32px;
 }
 
 .form__label-checkbox {
   color: @basic-black;
-}
-
-.form__group--border {
-  border-bottom: none;
 }
 
 .form input {
@@ -67,23 +91,19 @@
 }
 
 .form__textarea-comment {
-  min-width: 270px;
-  max-width: 270px;
+  min-width: 275px;
+  max-width: 275px;
   text-transform: uppercase;
   color: @special-dark-grey;
-}
-
-.form__group-textarea {
-  padding: 0 20px;
-}
-
-.form__checkbox-greed {
-  padding: 0 20px;
 }
 
 .form__legend--textarea {
   padding: 0;
   padding-bottom: 30px;
+}
+
+.form__group-textarea {
+  padding-bottom: 34px;
 }
 
 .form__container-small {
@@ -96,7 +116,6 @@
   font-family: @arial;
   color: @basic-black;
   line-height: 16px;
-  padding: 0 20px;
   padding-top: 21px;
   margin: 0 auto;
 }
@@ -110,30 +129,46 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form {
-    display: block;
-    width: 631px;
+  .container {
+    width: 630px;
+    padding-right: 61px;
     padding-left: 71px;
-    padding-right: 66px;
   }
 
-  .form__group {
+  .form {
+    display: block;
+  }
+
+  .form__group-radio {
     border: none;
   }
 
-  .form__program {
-    padding: 0;
+  .form__group-grid {
+    width: 630px;
+    padding-right: 61px;
+    padding-left: 71px;
   }
 
-  .form__group--radio {
-    margin: 0 20px;
+  .form__radio-grid {
+    width: 630px;
+    padding-right: 61px;
+    padding-left: 71px;
+  }
+
+  .form__border {
     border: 1px solid black;
+  }
+
+
+  .form__wrapper-cat-data {
+    border: none;
+    padding-bottom: 26px;
   }
 
   .form__textarea-comment {
     height: 200px;
-    min-width: 580px;
-    max-width: 580px;
+    min-width: 624px;
+    max-width: 624px;
   }
 
   .form__checkbox-greed {
@@ -147,7 +182,6 @@
 
   .form__submit {
     display: block;
-    margin: 0 20px;
     width: 280px;
     border: none;
     height: 40px;
@@ -166,61 +200,49 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form {
+  .container {
     width: 1220px;
     padding: 0 110px;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .form__legend {
-    padding: 0;
-    padding-bottom: 78px;
   }
 
   .form__wrapper-cat-data {
+    width: 1220px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 74px;
   }
 
-  .form--grid {
+  .form__group-grid {
+    width: 570px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__radio-grid {
+    width: 560px;
     padding: 0;
     margin: 0;
   }
 
   .form__cat-data {
-    width: 569px;
+    padding: 0;
+    margin: 0;
     padding-bottom: 20px;
   }
 
-  .form__cat-data--padding {
-    padding-bottom: 0;
-  }
-
-  .form__label-radio {
+  .form__group-radio {
     padding: 0;
     margin: 0;
   }
 
-  .form__group--radio {
-    margin: 0;
-    width: 568px;
-  }
-
   .form__wrapper-data {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
   }
 
   .form__сat-owner {
-    width: 572px;
-  }
-
-  .form__group--padding {
-    padding-bottom: 74px;
+    width: 570px;
   }
 
   .form__group-textarea {

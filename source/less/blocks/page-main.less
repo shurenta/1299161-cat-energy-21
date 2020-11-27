@@ -6,17 +6,29 @@
   margin: 0 auto;
 }
 
-@media (min-width: @desktop-width) {
-  .page-main__program-type-wrapper {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0 110px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 80px;
-    outline: 5px solid red;
-    outline-offset: -5px;
-  }
+.page-main__wrapper {
+  font-family: @oswald;
+  color: @basic-black;
+  padding-top: 27px;
+  padding-bottom: 39px;
+}
+
+.page-main__title {
+  font-family: @oswald;
+  font-size: 36px;
+  line-height: 36px;
+  color: @special-black;
+}
+
+.page-main__text {
+  margin: 0;
+  text-transform: uppercase;
+  width: 226px;
+}
+
+.page-main__advantages {
+  padding-top: 27px;
+  padding-bottom: 42px;
 }
 
 .page-main__example {
@@ -27,78 +39,36 @@
   .page-main__example {
     background-color: @basic-white;
   }
+
+  .page-main__text {
+    width: 320px;
+  }
 }
+
 
 @media (min-width: @desktop-width) {
   .page-main__example {
     background-color: @basic-white;
   }
-}
 
-.page-main__wrapper {
-  margin: 0 auto;
-  width: 280px;
-  padding: 0 20px;
-  font-family: @oswald;
-  color: @basic-black;
-  outline: 5px solid red;
-  outline-offset: -5px;
-}
-
-.page-main__title {
-  font-family: @oswald;
-  font-size: 36px;
-  line-height: 36px;
-  color: @special-black;
-  margin: 0;
-  padding-top: 27px;
-}
-
-.page-main__text {
-  margin: 0;
-  text-transform: uppercase;
-  width: 226px;
-  padding-top: 37px;
-  padding-bottom: 39px;
-}
-
-.page-main__advantages {
-  padding-top: 27px;
-  padding-bottom: 42px;
-}
-
-@media (min-width: @tablet-width) {
-  .page-main__wrapper {
-    margin: 0 auto;
-    width: 631px;
-    padding-left: 71px;
-    padding-right: 66px;
-  }
-
-  .page-main__text {
-    width: 320px;
-  }
-
-  .page-main__title {
-    margin-left: 31px;
-  }
-}
-
-
-@media (min-width: @desktop-width) {
-  .page-main__wrapper {
-    margin: 0 auto;
+  .page-main__program-type-wrapper {
     width: 1220px;
+    margin: 0 auto;
     padding: 0 110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
     outline: 5px solid red;
     outline-offset: -5px;
   }
 
-  .page-main__text {
-    width: 320px;
+  .page-main__wrapper {
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0 110px;
   }
 
-  .page-main__title {
-    margin: 0;
+  .page-main__text {
+    width: 320px;
   }
 }

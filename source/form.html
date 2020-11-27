@@ -33,67 +33,74 @@
     <!-- </div> -->
 
     <main class="page-body__main page-main">
-
-      <div class="page-main__wrapper">
+      <div class="page-main__wrapper container">
         <h1 class="page-main__title">Подбор программы</h1>
         <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
 
       <form class="page-main__form form" method="post" action="https://echo.htmlacademy.ru">
+
         <div class="form__wrapper-cat-data">
-          <fieldset class="form__group">
+
+          <fieldset class="form__group form__group-grid form__group--padding">
             <legend class="visually-hidden">Данные кота</legend>
-            <p class="form__cat-data form--grid">
+            <p class="form__cat-data form__grid">
               <label class="form__label" for="name">Имя:*</label>
               <input class="form__text form--input" type="text" name="name" id="name" placeholder="Барсик" required>
             </p>
-            <p class="form__cat-data form--grid">
+            <p class="form__cat-data form__grid">
               <label class="form__label" for="weight">Вес (кг):*</label>
               <input class="form__number form--input" type="number" name="weight" id="weight" placeholder="7" required>
             </p>
-            <p class="form__cat-data form--grid  form__cat-data--padding">
+            <p class="form__cat-data form__grid form__grid--padding">
               <label class="form__label" for="age">Возраст (лет):</label>
               <input class="form__number form--input" type="number" name="age" id="age" placeholder="7">
             </p>
           </fieldset>
 
-          <fieldset class="form__group form__group--radio">
+          <fieldset class="form__group form__group-radio">
             <legend class="visually-hidden">Выбор программы</legend>
-            <p class="form__program">
-              <input class="form__radio" type="radio" name="programm" value="slimming" id="slimming" checked>
-              <label class="form__label-radio" for="slimming">Похудение</label>
-            </p>
-            <p class="form__program">
-              <input class="form__radio" type="radio" name="programm" value="weight-gain" id="weight-gain">
-              <label class="form__label-radio" for="weight-gain">Набор массы</label>
-            </p>
-            <p class="form__program">
-              <input class="form__radio" type="radio" name="programm" value="not-know" id="not-know">
-              <label class="form__label-radio" for="not-know">Не знаю (Нужен ваш совет)</label>
-            </p>
-          </fieldset>
+              <div class="form__radio-grid">
+                <div class="form__border">
+                  <p class="form__program">
+                    <input class="form__radio" type="radio" name="programm" value="slimming" id="slimming" checked>
+                    <label class="form__label-radio" for="slimming">Похудение</label>
+                  </p>
+
+                  <p class="form__program">
+                    <input class="form__radio" type="radio" name="programm" value="weight-gain" id="weight-gain">
+                    <label class="form__label-radio" for="weight-gain">Набор массы</label>
+                  </p>
+
+                  <p class="form__program">
+                    <input class="form__radio" type="radio" name="programm" value="not-know" id="not-know">
+                    <label class="form__label-radio" for="not-know">Не знаю (Нужен ваш совет)</label>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
         </div>
 
-        <fieldset class="form__group form__group--border form__group--padding">
-            <legend class="form__legend">Контактные данные(владельца кота)</legend>
+        <fieldset class="form__group container">
+          <legend class="form__legend">Контактные данные(владельца кота)</legend>
           <div class="form__wrapper-data">
-            <p class="form__сat-owner form--grid">
+            <p class="form__сat-owner form__grid">
               <label class="form__label" for="email">E-mail:*</label>
               <input class="form__email form--input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
             </p>
-            <p class="form__сat-owner form--grid">
+            <p class="form__сat-owner form__grid">
               <label class="form__label" for="tel">Телефон:*</label>
               <input class="form__tel form--input" type="tel" name="tel" pattern="8 \(\d{3}\) \d{3}-\d{2}-\d{2}" id="tel" placeholder="8 (960) 900-60-90" required>
             </p>
           </div>
         </fieldset>
 
-        <fieldset class="form__group form__group-textarea form__group--border">
+        <fieldset class="form__group form__group-textarea container">
           <legend class="form__legend form__legend--textarea">Комментарий</legend>
           <textarea class="form__textarea-comment"  name="comment">Расскажите обо всех повАдках кота</textarea>
         </fieldset>
 
-        <fieldset class="form__group form__group-checkbox form__group--border">
+        <fieldset class="form__group form__group-checkbox container">
           <legend class="form__legend">Дополнительно</legend>
           <div class="form__checkbox-wrapper">
             <p class="form__checkbox-greed">
@@ -114,7 +121,8 @@
             </p>
           </div>
         </fieldset>
-        <div class="form__container-small">
+
+        <div class="form__container-small container">
           <button class="form__submit button" type="submit">отправить заявку</button>
           <small class="form__small">* — Обязательные поля</small>
         </div>
