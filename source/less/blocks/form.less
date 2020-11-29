@@ -27,7 +27,7 @@
 
 .form__group {
   border: none;
-  padding: 0 20px;
+  padding: 0;
 }
 
 .form__grid {
@@ -40,6 +40,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.form__owner-data {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .form__input {
@@ -60,11 +66,6 @@
   border-bottom: 1px solid black;
 }
 
-.form__border {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .form__program {
   margin: 0;
 }
@@ -83,7 +84,24 @@
   font-size: 24px;
   line-height: 26px;
   padding: 0;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
+  text-transform: none;
+}
+
+.form__group--line {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.form__group--line::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  top: 35px;
+  right: 0;
+  height: 3px;
+  background-color: @basic_green;
 }
 
 .form__label-checkbox {
@@ -143,7 +161,17 @@
   }
 
   .form__group--radio {
+    margin: 0 auto;
+    padding-right: 61px;
+    padding-left: 71px;
     border: none;
+  }
+
+
+  .form__radio-grid {
+    width: 630px;
+    padding: 0;
+    border: 1px solid black;
   }
 
   .form__group-grid {
@@ -152,19 +180,24 @@
     padding-left: 71px;
   }
 
-  .form__radio-grid {
-    width: 630px;
-    padding-right: 61px;
-    padding-left: 71px;
+  .form__group--line::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    top: 35px;
+    right: 0;
+    height: 3px;
+    background-color: @basic_green;
   }
 
-  .form__border {
-    border: 1px solid black;
-  }
-
-
-  .form__wrapper-cat-data {
-    border: none;
+  .form__group--line::before {
+    content: "";
+    position: absolute;
+    width: 5%;
+    top: 35px;
+    left: 0;
+    height: 3px;
+    background-color: @basic_green;
   }
 
   .form__textarea-comment {
@@ -221,14 +254,33 @@
     margin-bottom: 20px;
   }
 
+  .form__group--line::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    top: 35px;
+    right: 0;
+    height: 3px;
+    background-color: @basic_green;
+  }
+
+  .form__group--line::before {
+    content: "";
+    position: absolute;
+    width: 5%;
+    top: 35px;
+    left: 0;
+    height: 3px;
+    background-color: @basic_green;
+  }
+
+
   .form__grid:last-child {
     margin: 0;
   }
 
   .form__radio-grid {
-    width: 560px;
-    padding: 0;
-    margin: 0;
+    width: 570px;
   }
 
   .form__group--radio {
@@ -236,19 +288,22 @@
     margin: 0;
   }
 
-  .form__wrapper-data {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 80px;
+  .form__owner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  .form__grid--desctop {
-    margin: 0;
+  .form__owner-data {
+    flex-grow: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 569px;
   }
 
   .form__textarea-comment {
-    max-width: 1220px;
-    min-width: 1220px;
+    max-width: 1214px;
+    min-width: 1214px;
   }
 
   .form__checkbox-wrapper {

@@ -52,7 +52,7 @@
               <label class="form__label" for="weight">Вес (кг):*</label>
               <input class="form__input" type="number" name="weight" id="weight" placeholder="7" required>
             </p>
-            <p class="form__grid form__grid--padding">
+            <p class="form__grid">
               <label class="form__label" for="age">Возраст (лет):</label>
               <input class="form__input" type="number" name="age" id="age" placeholder="7">
             </p>
@@ -61,64 +61,68 @@
           <fieldset class="form__group form__group--radio">
             <legend class="visually-hidden">Выбор программы</legend>
               <div class="form__radio-grid">
-                <div class="form__border">
-                  <p class="form__program">
-                    <input type="radio" name="programm" value="slimming" id="slimming" checked>
-                    <label class="form__label-radio" for="slimming">Похудение</label>
-                  </p>
+                <p class="form__program">
+                  <input type="radio" name="programm" value="slimming" id="slimming" checked>
+                  <label class="form__label-radio" for="slimming">Похудение</label>
+                </p>
 
-                  <p class="form__program">
-                    <input type="radio" name="programm" value="weight-gain" id="weight-gain">
-                    <label class="form__label-radio" for="weight-gain">Набор массы</label>
-                  </p>
+                <p class="form__program">
+                  <input type="radio" name="programm" value="weight-gain" id="weight-gain">
+                  <label class="form__label-radio" for="weight-gain">Набор массы</label>
+                </p>
 
-                  <p class="form__program">
-                    <input type="radio" name="programm" value="not-know" id="not-know">
-                    <label class="form__label-radio" for="not-know">Не знаю (Нужен ваш совет)</label>
-                  </p>
-                </div>
+                <p class="form__program">
+                  <input type="radio" name="programm" value="not-know" id="not-know">
+                  <label class="form__label-radio" for="not-know">Не знаю (Нужен ваш совет)</label>
+                </p>
               </div>
           </fieldset>
         </div>
 
-        <fieldset class="form__group container">
-          <legend class="form__legend">Контактные данные(владельца кота)</legend>
-          <div class="form__wrapper-data">
-            <p class="form__grid form__grid--desctop">
-              <label class="form__label" for="email">E-mail:*</label>
-              <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-            </p>
-            <p class="form__grid form__grid--desctop">
-              <label class="form__label" for="tel">Телефон:*</label>
-              <input class="form__input" type="tel" name="tel" pattern="8 \(\d{3}\) \d{3}-\d{2}-\d{2}" id="tel" placeholder="8 (960) 900-60-90" required>
-            </p>
+        <fieldset class="form__group form__group--line">
+          <div class="form__wrapper-data container">
+            <h2 class="form__legend">Контактные данные(владельца кота)</h2>
+            <div class="form__owner-wrapper">
+              <p class="form__owner-data">
+                <label class="form__label" for="email">E-mail:*</label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              </p>
+              <p class="form__owner-data">
+                <label class="form__label" for="tel">Телефон:*</label>
+                <input class="form__input" type="tel" name="tel" pattern="8 \(\d{3}\) \d{3}-\d{2}-\d{2}" id="tel" placeholder="8 (960) 900-60-90" required>
+              </p>
+            </div>
           </div>
         </fieldset>
 
-        <fieldset class="form__group form__group--textarea container">
-          <legend class="form__legend form__legend--textarea">Комментарий</legend>
-          <textarea class="form__textarea-comment"  name="comment">Расскажите обо всех повАдках кота</textarea>
+        <fieldset class="form__group form__group--textarea form__group--line">
+          <div class="container">
+            <h2 class="form__legend">Комментарий</h2>
+            <textarea class="form__textarea-comment"  name="comment">Расскажите обо всех повАдках кота</textarea>
+          </div>
         </fieldset>
 
-        <fieldset class="form__group container">
-          <legend class="form__legend">Дополнительно</legend>
-          <div class="form__checkbox-wrapper">
-            <p class="form__checkbox-greed">
-              <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-              <label class="form__label-checkbox" for="sweetener">Сахарозаменитель</label>
-            </p>
-            <p class="form__checkbox-greed">
-              <input class="form__checkbox" type="checkbox" name="drinking-water" id="drinking-water">
-              <label class="form__label-checkbox" for="drinking-water">Питьевая вода</label>
-            </p>
-            <p class="form__checkbox-greed">
-              <input class="form__checkbox" type="checkbox" name="milk" id="milk">
-              <label class="form__label-checkbox" for="milk">Молоко</label>
-            </p>
-            <p class="form__checkbox-greed">
-              <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
-              <label class="form__label-checkbox" for="vitamins">Витамины</label>
-            </p>
+        <fieldset class="form__group form__group--line">
+          <div class="container">
+            <h2 class="form__legend">Дополнительно</h2>
+            <div class="form__checkbox-wrapper">
+              <p class="form__checkbox-greed">
+                <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="form__label-checkbox" for="sweetener">Сахарозаменитель</label>
+              </p>
+              <p class="form__checkbox-greed">
+                <input class="form__checkbox" type="checkbox" name="drinking-water" id="drinking-water">
+                <label class="form__label-checkbox" for="drinking-water">Питьевая вода</label>
+              </p>
+              <p class="form__checkbox-greed">
+                <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+                <label class="form__label-checkbox" for="milk">Молоко</label>
+              </p>
+              <p class="form__checkbox-greed">
+                <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="form__label-checkbox" for="vitamins">Витамины</label>
+              </p>
+            </div>
           </div>
         </fieldset>
 
