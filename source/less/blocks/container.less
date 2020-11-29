@@ -1,6 +1,4 @@
 .container {
-  outline: 5px solid red;
-  outline-offset: -5px;
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
@@ -11,11 +9,21 @@
     width: 707px;
     padding: 0 30px;
   }
+
+  .container--flex {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .container {
+    margin: 0 auto;
     width: 1220px;
-    padding: 0 110px;
+  }
+
+  .container--flex {
+    display: flex;
+    justify-content: space-between;
   }
 }
