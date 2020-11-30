@@ -13,6 +13,17 @@
   padding-bottom: 39px;
 }
 
+.page-main__title-catalog {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-main__wrapper-title {
+  border-bottom: 1px solid black;
+  padding-bottom: 41px;
+}
+
 .page-main__title {
   font-family: @oswald;
   font-size: 36px;
@@ -35,18 +46,70 @@
   background-color: @background-grey;
 }
 
+.page-main__line-wrapper {
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.page-main__line-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  top: 15px;
+  right: 0;
+  height: 3px;
+  background-color: @basic_green;
+}
+
 @media (min-width: @tablet-width) {
   .page-main__example {
     background-color: @basic-white;
   }
 
+  .page-main__wrapper-title {
+    border: none;
+    width: 707px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
   .page-main__text {
     width: 320px;
+  }
+
+  .page-main__line-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    top: 15px;
+    right: 0;
+    height: 3px;
+    background-color: @basic_green;
+  }
+
+  .page-main__line-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    top: 15px;
+    left: 0;
+    height: 3px;
+    background-color: @basic_green;
+  }
+
+  .page-main__title-catalog {
+    width: 708px;
+    padding: 0;
   }
 }
 
 
 @media (min-width: @desktop-width) {
+  .page-main__title-catalog {
+    padding: 0;
+    width: 1220px;
+  }
+
   .page-main__example {
     background-color: @basic-white;
   }
@@ -62,6 +125,33 @@
     outline-offset: -5px;
   }
 
+  .page-main__line-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    top: 15px;
+    right: 0;
+    height: 3px;
+    background-color: @basic_green;
+  }
+
+  .page-main__line-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    top: 15px;
+    left: 0;
+    height: 3px;
+    background-color: @basic_green;
+  }
+
+  .page-main__wrapper-title {
+    border: none;
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
   .page-main__wrapper {
     margin: 0 auto;
     width: 1220px;
@@ -70,5 +160,14 @@
 
   .page-main__text {
     width: 320px;
+  }
+
+  .page-main__catalog-present-wrapper {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    grid-column-gap: 79px;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 }

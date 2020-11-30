@@ -1,0 +1,26 @@
+.product {
+  margin-bottom: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .product {
+    width: 707px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product {
+    padding: 0 110px;
+    width: 1220px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 80px;
+    grid-row-gap: 144px;
+    margin-bottom: 28px;
+  }
+}

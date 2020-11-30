@@ -1,14 +1,40 @@
 .present {
   width: 280px;
   height: 289px;
-  background-image: url("../img/catalog-mobile.png");
+  margin: 0 auto;
+  padding: 0 20px;
   background-color: @basic_green;
+  background-image: url("../img/catalog-mobile.png");
   background-repeat: no-repeat;
   background-size: 280px 289px;
+  background-position: center;
 }
 
 .present__text-pesent {
   font-size: 16px;
   line-height: 20px;
   color: @basic-white;
+}
+
+@media (min-width: @tablet-width) {
+  .present {
+    width: 708px;
+    height: 200px;
+    padding: 0 30px;
+    background-image: url("../img/catalog-tablet.png");
+    background-size: 708px 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .present {
+    width: 245px;
+    height: 289px;
+    padding: 0;
+    margin: 0;
+    background-color: @basic_green;
+    background-image: url("../img/catalog-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 245px 289px;
+  }
 }
