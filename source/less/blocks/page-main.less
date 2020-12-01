@@ -46,20 +46,6 @@
   background-color: @background-grey;
 }
 
-.page-main__line-wrapper {
-  margin-bottom: 35px;
-  position: relative;
-}
-
-.page-main__line-wrapper::before {
-  content: "";
-  position: absolute;
-  width: 10%;
-  top: 15px;
-  right: 0;
-  height: 3px;
-  background-color: @basic_green;
-}
 
 @media (min-width: @tablet-width) {
   .page-main__example {
@@ -75,26 +61,6 @@
 
   .page-main__text {
     width: 320px;
-  }
-
-  .page-main__line-wrapper::before {
-    content: "";
-    position: absolute;
-    width: 10%;
-    top: 15px;
-    right: 0;
-    height: 3px;
-    background-color: @basic_green;
-  }
-
-  .page-main__line-wrapper::after {
-    content: "";
-    position: absolute;
-    width: 10%;
-    top: 15px;
-    left: 0;
-    height: 3px;
-    background-color: @basic_green;
   }
 
   .page-main__title-catalog {
@@ -125,26 +91,6 @@
     outline-offset: -5px;
   }
 
-  .page-main__line-wrapper::before {
-    content: "";
-    position: absolute;
-    width: 20%;
-    top: 15px;
-    right: 0;
-    height: 3px;
-    background-color: @basic_green;
-  }
-
-  .page-main__line-wrapper::after {
-    content: "";
-    position: absolute;
-    width: 5%;
-    top: 15px;
-    left: 0;
-    height: 3px;
-    background-color: @basic_green;
-  }
-
   .page-main__wrapper-title {
     border: none;
     width: 1220px;
@@ -162,7 +108,7 @@
     width: 320px;
   }
 
-  .page-main__catalog-present-wrapper {
+  .catalog-additional-goods__catalog-wrapper {
     display: grid;
     grid-template-columns: 896px 245px;
     grid-column-gap: 79px;
