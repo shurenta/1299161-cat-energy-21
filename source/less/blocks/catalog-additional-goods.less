@@ -16,7 +16,7 @@
 .catalog-additional-goods--line::before {
   content: "";
   position: absolute;
-  width: 20%;
+  width: 15%;
   top: 15px;
   right: 0;
   height: 3px;
@@ -24,8 +24,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog-additional-goods__wraper-title {
+    width: 708px;
+    margin: 0 auto;
+  }
+
   .catalog-additional-goods-title {
     border-bottom: none;
+    position: relative;
+    width: 250px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .catalog-additional-goods--line::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 15px;
+    right: 0;
+    height: 3px;
+    background-color: @basic_green;
   }
 }
 
@@ -36,5 +55,18 @@
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
+  }
+
+  .catalog-additional-goods__wraper-title {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .catalog-additional-goods-title {
+    border-bottom: none;
+    position: relative;
+    width: 250px;
+    padding: 0;
+    margin: 0;
   }
 }
