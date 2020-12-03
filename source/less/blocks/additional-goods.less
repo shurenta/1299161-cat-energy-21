@@ -1,15 +1,23 @@
-.additional-goods__title {
-  font-family: @oswald;
-  color: @special-grey;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
+.additional-goods {
+  list-style: none;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.additional-goods__text {
-  line-height: 14px;
+@media (min-width: @tablet-width) {
+  .additional-goods {
+    padding: 0;
+    width: 707px;
+    border: 1px solid black;
+  }
 }
 
-.additional-goods__price {
-  line-height: 14px;
+@media (min-width: @desktop-width) {
+  .additional-goods {
+    width: 896px;
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
 }
