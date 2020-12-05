@@ -1,4 +1,4 @@
-.advantages {
+.advantages__wrapper {
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
@@ -86,10 +86,13 @@
 
 @media (min-width: @tablet-width) {
   .advantages {
+    border-bottom: 1px solid @border-grey;
+  }
+
+  .advantages__wrapper {
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
-    border-bottom: 1px solid @border-grey;
     padding-bottom: 101px;
   }
 
@@ -246,6 +249,10 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
+    border: none;
+  }
+
+  .advantages__wrapper {
     width: 1220px;
     padding: 0 110px;
     margin: 0 auto;
