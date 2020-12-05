@@ -1,9 +1,28 @@
+.address {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 11px;
+}
+
 .address__wrapper {
-  display: flex;
   flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
+  .address {
+    width: 707px;
+    padding: 0 30px;
+    margin-bottom: 57px;
+  }
+
+  .address__сity {
+    display: block;
+    margin-top: 19px;
+  }
+
   .address__wrapper {
     display: flex;
     justify-content: space-between;
@@ -14,12 +33,22 @@
   .address {
     position: relative;
     min-height: 400px;
+    width: 1220px;
+    padding: 0 110px;
+    margin-bottom: 0;
+  }
+
+  .address__сity {
+    display: block;
+    margin-top: 0;
   }
 
   .address__wrapper {
     width: 570px;
     position: absolute;
-    top: 85px;
+    top: 95px;
+    left: 110px;
+    padding-bottom: 66px;
     background-color: @basic-white;
   }
 }

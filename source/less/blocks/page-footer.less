@@ -4,20 +4,123 @@
   text-transform: uppercase;
   color: @special-black;
   width: 140px;
+  margin: 0;
+  padding-top: 32px;
 }
 
 .page-footer__text {
   line-height: 20px;
   width: 140px;
+  padding-top: 15px;
 }
 
 .page-footer__container {
   background-color: @basic_grey;
 }
 
+.page__footer-wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.page-footer__logo-image {
+  padding-top: 40px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+  width: 128px;
+  height: 24px;
+  text-align: center;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  &:focus {
+    opacity: 60%;
+  }
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: @special-dark-grey;
+}
+
+.page-footer__logo-academy {
+
+  position: absolute;
+  right: 0;
+  top: -8px;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__container {
     background-color: @basic_grey;
+  }
+
+  .page-footer__slogan {
+    font-family: @oswald;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @special-black;
+    width: 160px;
+    margin-left: 40px;
+    padding-top: 32px;
+  }
+
+  .page-footer__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    padding: 0;
+    padding-top: 29px;
+    margin: 0;
+    margin-right: 40px;
+    text-align: right;
+  }
+
+  .page-footer__address {
+    margin-bottom: 11px;
+  }
+
+  .page-footer__map {
+    width: 768px;
+    height: 400px;
+  }
+
+  .page__footer-wrapper {
+    width: 707px;
+    padding: 0 30px;
+    padding-top: 60px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo-image {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: 128px;
+    height: 24px;
+  }
+
+  .page-footer__copyright-link {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-footer__logo-academy {
+    position: static;
+    margin-left: 21px;
   }
 }
 
@@ -26,8 +129,16 @@
     position: relative;
   }
 
+  .page__footer-wrapper {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+
   .page-footer__container {
     background-color: @basic_grey;
+    padding-bottom: 50px;
+    padding-top: 64px;
   }
 
 
@@ -39,9 +150,36 @@
     bottom: 0;
     z-index: -1;
   }
-}
 
-.page-footer__copyright-link {
-  font-size: 16px;
-  color: @special-dark-grey;
+  .page-footer__slogan {
+    font-family: @oswald;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @special-black;
+    width: 160px;
+    margin: 0;
+    margin-left: 76px;
+    margin-top: 36px;
+  }
+
+  .page-footer__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    padding: 0;
+    margin-top: 65px;
+    margin-right: 84px;
+    text-align: left;
+  }
+
+  .page-footer__copyright-link {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-footer__logo-academy {
+    position: static;
+    margin-left: 21px;
+  }
 }

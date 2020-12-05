@@ -5,12 +5,24 @@
   align-content: start;
 }
 
-/*@media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .page-body {
-    background-image: url("../img/cat-index.png");
+    background-image: url("../img/index-background-desktop.png");
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 720px 694px;
+    background-size: 50% 694px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 50%;
+      height: 694px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: @basic_green;
+      opacity: 85%;
+    }
   }
 }
-*/
