@@ -1,19 +1,14 @@
 .result {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 122px 122px;
+  grid-column-gap: 18px;
   margin: 0;
   margin-bottom: 19px;
 }
 
 .result__wrapper {
-  display: grid;
-  position: relative;
-  margin-left: 3px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "description description"
-    "definition definition";
+  display: flex;
+  flex-direction: column;
 }
 
 .result__wrapper--before {
@@ -26,7 +21,7 @@
     display: block;
     position: absolute;
     bottom: 15px;
-    left: -3px;
+    left: 0;
     margin-right: 17px;
     border: 1px solid @toogle-border-grey;
     border-radius: 3px;
@@ -44,7 +39,7 @@
     display: block;
     position: absolute;
     bottom: 15px;
-    left: 13px;
+    left: 15px;
     margin-right: 17px;
     border: 1px solid @toogle-border-grey;
     border-radius: 3px;
@@ -54,69 +49,71 @@
 
 .result__definition {
   width: 50px;
-  grid-area: definition;
-  margin-top: 5px;
   background-color: @background-grey;
   z-index: 2;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  order: 2;
 }
 
 .result__definition--right {
   text-align: right;
-  padding: 0 20px;
-  margin-left: 26px;
+  padding: 0 15px;
+  margin-left: 35px;
 }
 
 .result__definition--left {
   text-align: center;
-  padding: 0 17px;
-  margin-left: 13px;
+  padding: 0 15px;
+  margin-left: 20px;
 }
 
 .result__description {
   text-transform: uppercase;
-  grid-area: description;
   font-family: @oswald;
   font-size: 24px;
   line-height: 24px;
   color: @basic-black;
+  margin-bottom: 10px;
+}
+
+.result__description--left {
+  text-align: center;
+  margin-left: 2px;
 }
 
 .result__description--right {
-  margin-left: 34px;
+  margin-left: 36px;
 }
 
 @media (min-width: @tablet-width) {
   .result {
-    width: 366px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 160px 160px;
+    grid-column-gap: 38px;
     margin: 0;
-    margin-top: 5px;
+    padding-top: 69px;
+    padding-bottom: 31px;
   }
 
   .result__wrapper {
-    display: grid;
-    position: relative;
-    margin-left: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "description description"
-      "definition definition";
+    display: flex;
+    flex-direction: column;
   }
 
   .result__wrapper--before {
-    &::before {
+    position: relative;
 
+    &::before {
       content: "";
       width: 160px;
       height: 70px;
       display: block;
       position: absolute;
-      bottom: 38px;
-      left: 0;
+      bottom: 6px;
+      left: -1px;
+      margin-right: 17px;
       border: 1px solid @toogle-border-grey;
       border-radius: 3px;
       z-index: 1;
@@ -127,14 +124,14 @@
     position: relative;
 
     &::after {
-
       content: "";
       width: 160px;
       height: 70px;
       display: block;
       position: absolute;
-      bottom: 38px;
-      left: 20px;
+      bottom: 6px;
+      left: 5px;
+      margin-right: 17px;
       border: 1px solid @toogle-border-grey;
       border-radius: 3px;
       z-index: 1;
@@ -142,76 +139,75 @@
   }
 
   .result__definition {
-    grid-area: definition;
-    text-align: left;
-    width: 127px;
+    background-color: @background-grey;
+    z-index: 2;
     font-size: 14px;
     line-height: 14px;
-    z-index: 2;
-    margin: 0;
+    text-align: center;
+    order: 2;
+    padding: 0;
+  }
+
+  .result__definition--right {
+    width: 143px;
+    text-align: center;
+    margin-left: 15px;
+    background: @basic-white;
+  }
+
+  .result__definition--left {
+    width: 110px;
+    text-align: center;
+    margin-left: 25px;
     background: @basic-white;
   }
 
   .result__description {
     text-transform: uppercase;
-    grid-area: description;
     font-family: @oswald;
     font-size: 30px;
     line-height: 37px;
     color: @basic-black;
-  }
-
-  .result__description--right {
-    margin-left: 50px;
-    padding-bottom: 10px;
-  }
-
-  .result__definition--right {
-    margin-left: 31px;
-    padding: 0 7px;
+    margin-bottom: 10px;
   }
 
   .result__description--left {
-    margin-left: 56px;
+    text-align: center;
+    margin-left: 2px;
   }
 
-  .result__definition--left {
-    width: 97px;
-    text-align: left;
-    margin-left: 25px;
-    padding: 0 7px;
+  .result__description--right {
+    margin-left: 36px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .result {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 160px 160px;
+    grid-column-gap: 38px;
     margin: 0;
-    margin-bottom: 21px;
+    margin-top: 12px;
+    margin-bottom: 28px;
   }
 
   .result__wrapper {
-    display: grid;
-    position: relative;
-    margin-left: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "description description"
-      "definition definition";
+    display: flex;
+    flex-direction: column;
   }
 
   .result__wrapper--before {
-    &::before {
+    position: relative;
 
+    &::before {
       content: "";
       width: 160px;
       height: 70px;
       display: block;
       position: absolute;
-      bottom: 38px;
-      left: 0;
+      bottom: 6px;
+      left: -1px;
+      margin-right: 17px;
       border: 1px solid @toogle-border-grey;
       border-radius: 3px;
       z-index: 1;
@@ -227,8 +223,9 @@
       height: 70px;
       display: block;
       position: absolute;
-      bottom: 38px;
-      left: 20px;
+      bottom: 6px;
+      left: 5px;
+      margin-right: 17px;
       border: 1px solid @toogle-border-grey;
       border-radius: 3px;
       z-index: 1;
@@ -236,43 +233,33 @@
   }
 
   .result__definition {
-    grid-area: definition;
-    text-align: left;
-    width: 127px;
+    background-color: @background-grey;
+    z-index: 2;
     font-size: 14px;
     line-height: 14px;
-    z-index: 2;
-    margin: 0;
-    background: @background-grey;
+    text-align: center;
+    order: 2;
+    padding: 0;
+  }
+
+  .result__definition--right {
+    width: 143px;
+    text-align: center;
+    margin-left: 15px;
+  }
+
+  .result__definition--left {
+    width: 110px;
+    text-align: center;
+    margin-left: 25px;
   }
 
   .result__description {
     text-transform: uppercase;
-    grid-area: description;
     font-family: @oswald;
     font-size: 30px;
     line-height: 37px;
     color: @basic-black;
-  }
-
-  .result__description--right {
-    margin-left: 50px;
-    padding-bottom: 10px;
-  }
-
-  .result__definition--right {
-    margin-left: 31px;
-    padding: 0 7px;
-  }
-
-  .result__description--left {
-    margin-left: 56px;
-  }
-
-  .result__definition--left {
-    width: 97px;
-    text-align: left;
-    margin-left: 25px;
-    padding: 0 7px;
+    margin-bottom: 10px;
   }
 }

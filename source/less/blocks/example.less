@@ -2,7 +2,6 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
-  padding-bottom: 35px;
 }
 
 .example__container {
@@ -10,7 +9,6 @@
 }
 
 .example__title {
-  padding-top: 28px;
   font-weight: 400;
   margin-bottom: 32px;
 }
@@ -18,7 +16,7 @@
 .example__text {
   margin: 0;
   width: 279px;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .example__expenses {
@@ -59,9 +57,9 @@
   }
 
   .example {
-    padding-bottom: 69px;
-    margin-bottom: 36px;
-    background-image: linear-gradient(@basic-white 55.55%, @background-grey 55%);
+    padding-top: 44px;
+    padding-bottom: 36px;
+    background-image: linear-gradient(@basic-white 59.2%, @background-grey 59.2%);
   }
 
   .example__container {
@@ -72,8 +70,7 @@
     padding: 0;
     margin: 0;
     font-weight: 400;
-    margin-top: 43px;
-    margin-bottom: 65px;
+    padding-bottom: 64px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -81,7 +78,6 @@
   .example__text {
     width: 680px;
     margin: 0;
-    margin-bottom: 64px;
   }
 
   .example__expenses {
@@ -92,6 +88,7 @@
     line-height: 20px;
     color: @basic-black;
     text-transform: uppercase;
+    padding-top: 65px;
   }
 
   .example__price {
@@ -117,6 +114,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .example {
+    padding: 0;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    background-image: linear-gradient(@basic-white 30%, @background-grey 30%);
+  }
+
   .example__wrapper {
     width: 1220px;
     padding: 0 110px;
@@ -131,12 +135,6 @@
     justify-content: space-between;
   }
 
-  .example {
-    padding-bottom: 30px;
-    margin-bottom: 0;
-    background-image: linear-gradient(@basic-white 29%, @background-grey 29%);
-  }
-
   .example__container {
     margin-bottom: 45px;
   }
@@ -145,8 +143,8 @@
     padding: 0;
     margin: 0;
     font-weight: 400;
-    padding-top: 53px;
     padding-bottom: 149px;
+    margin-top: 59px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -155,7 +153,6 @@
     width: 436px;
     margin: 0;
     padding: 0;
-    margin-bottom: 84px;
   }
 
   .example__expenses {
@@ -182,14 +179,17 @@
     margin-top: 0;
   }
 
+  .example__photo {
+    margin-top: 3px;
+  }
+
   .example__image-it-was {
     width: 677px;
     height: 520px;
-    margin-left: 29px;
+    margin-left: 32px;
   }
 
   .example__image {
     width: 677px;
-    margin-bottom: 32px;
   }
 }

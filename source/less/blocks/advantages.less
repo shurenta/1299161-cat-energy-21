@@ -2,11 +2,12 @@
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
+  margin-bottom: 42px;
 }
 
 .advantages__title {
   font-weight: 400;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 
@@ -14,16 +15,21 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 46px;
 }
 
 .advantages__item {
   padding-left: 80px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.advantages__item-text {
+  margin: 0;
 }
 
 .advantages__item--one {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 
   &::before {
     content: "";
@@ -33,13 +39,14 @@
     height: 60px;
     background-image: url("../img/group 1.png");
     left: 0;
-    bottom: -5px;
+    top: 50%;
+    margin-top: -29px;
   }
 }
 
 .advantages__item--two {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
 
   &::before {
     content: "";
@@ -49,13 +56,14 @@
     height: 60px;
     background-image: url("../img/group 2-2.png");
     left: 0;
-    bottom: -3px;
+    top: 50%;
+    margin-top: -29px;
   }
 }
 
 .advantages__item--three {
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 17px;
 
   &::before {
     content: "";
@@ -65,7 +73,8 @@
     height: 60px;
     background-image: url("../img/group 3.png");
     left: 0;
-    bottom: -4px;
+    top: 50%;
+    margin-top: -30px;
   }
 }
 
@@ -80,25 +89,25 @@
     height: 60px;
     background-image: url("../img/group 4.png");
     left: 0;
-    bottom: -4px;
+    top: 50%;
+    margin-top: -29px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages {
     border-bottom: 1px solid @border-grey;
+    padding-bottom: 34px;
   }
 
   .advantages__wrapper {
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
-    padding-bottom: 101px;
   }
 
   .advantages__title {
     font-weight: 400;
-    margin-bottom: 185px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -106,19 +115,26 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 59px;
+    grid-row-gap: 29px;
     margin-bottom: 0;
   }
 
   .advantages__item {
     position: relative;
-    width: 230px;
     padding-left: 0;
     margin: 0;
+    width: 250px;
+    min-height: 280px;
+  }
+
+  .advantages__item-text {
+    margin: 0;
+    margin-top: 145px;
   }
 
   .advantages__item--one {
     position: relative;
-    margin-bottom: 245px;
 
     &::before {
       content: "";
@@ -128,7 +144,7 @@
       height: 80px;
       background-image: url("../img/group-1-tablet.png");
       left: 0;
-      top: -113px;
+      top: 65px;
     }
 
     &::after {
@@ -141,7 +157,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -152px;
+      top: -6px;
       left: 118px;
       z-index: -1;
     }
@@ -149,7 +165,6 @@
 
   .advantages__item--two {
     position: relative;
-    margin-left: 30px;
 
     &::before {
       content: "";
@@ -159,7 +174,7 @@
       height: 80px;
       background-image: url("../img/group-2-tablet.png");
       left: 0;
-      top: -113px;
+      top: 65px;
     }
 
     &::after {
@@ -172,7 +187,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -152px;
+      top: -6px;
       left: 111px;
       z-index: -1;
     }
@@ -190,7 +205,7 @@
       height: 80px;
       background-image: url("../img/group-3-tablet.png");
       left: 0;
-      top: -113px;
+      top: 64px;
     }
 
     &::after {
@@ -203,7 +218,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -152px;
+      top: -4px;
       left: 113px;
       z-index: -1;
     }
@@ -211,9 +226,6 @@
 
   .advantages__item--four {
     position: relative;
-    margin-left: 30px;
-    width: 245px;
-
 
     &::before {
       content: "";
@@ -223,7 +235,7 @@
       height: 80px;
       background-image: url("../img/group-4-tablet.png");
       left: 0;
-      top: -113px;
+      top: 63px;
     }
 
     &::after {
@@ -236,20 +248,17 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -152px;
+      top: -5px;
       left: 113px;
       z-index: -1;
     }
-  }
-
-  .advantages__item-text {
-    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
     border: none;
+    padding: 0;
   }
 
   .advantages__wrapper {
@@ -257,7 +266,7 @@
     padding: 0 110px;
     margin: 0 auto;
     border: none;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
   }
 
   .advantages__title {
@@ -267,7 +276,6 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 186px;
   }
 
   .advantages__list {
@@ -277,7 +285,14 @@
   }
 
   .advantages__item {
-    width: 220px;
+    width: 250px;
+    min-height: 295px;
+    z-index: 2;
+  }
+
+  .advantages__item-text {
+    margin: 0;
+    margin-top: 181px;
   }
 
   .advantages__item--one {
@@ -292,7 +307,7 @@
       height: 80px;
       background-image: url("../img/group-1-tablet.png");
       left: 0;
-      top: -113px;
+      top: 102px;
     }
 
     &::after {
@@ -305,7 +320,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -152px;
+      top: 33px;
       left: 118px;
       z-index: -1;
     }
@@ -324,7 +339,7 @@
       height: 80px;
       background-image: url("../img/group-2-tablet.png");
       left: 0;
-      top: -113px;
+      top: 106px;
     }
 
     &::after {
@@ -337,7 +352,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -152px;
+      top: 30px;
       left: 111px;
       z-index: -1;
     }
@@ -356,7 +371,7 @@
       height: 80px;
       background-image: url("../img/group-3-tablet.png");
       left: 0;
-      top: -113px;
+      top: 105px;
     }
 
     &::after {
@@ -369,7 +384,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -152px;
+      top: 35px;
       left: 113px;
       z-index: -1;
     }
@@ -389,7 +404,7 @@
       height: 80px;
       background-image: url("../img/group-4-tablet.png");
       left: 0;
-      top: -113px;
+      top: 103px;
     }
 
     &::after {
@@ -402,7 +417,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -152px;
+      top: 35px;
       left: 113px;
       z-index: -1;
     }

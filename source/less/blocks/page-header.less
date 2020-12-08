@@ -13,14 +13,21 @@
 }
 
 
-.page_header__wrapper {
+.page__header-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 14px;
   margin-top: 12px;
-  padding-left: 20px;
   border-bottom: 1px solid @border-grey;
+  padding-left: 20px;
+  padding-right: 32px;
+}
+
+.page-header__logo {
+  display: block;
+  width: 190px;
+  height: 39px;
 }
 
 .page-header__logo-image {
@@ -45,20 +52,18 @@
   border: none;
   width: 18px;
   height: 18px;
-  position: relative;
   margin-top: 12px;
-  margin-right: 26px;
   background-color: @basic-white;
+  display: block;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
+    display: block;
     width: 24px;
     height: 2px;
     background-color: @basic-black;
-    top: 7px;
-    left: 0;
   }
 
   &::before {
@@ -72,20 +77,28 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 72px;
     margin: 0 auto;
     padding: 0 30px;
     padding-top: 25px;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
     width: 707px;
   }
 
-  .page_header__wrapper {
+  .page__header-wrapper {
     display: block;
     padding: 0;
     margin: 0;
     border: none;
+  }
+
+
+  .page-header__logo {
+    display: block;
+    width: 174px;
+    height: 51px;
   }
 
   .page-header__logo-image {
@@ -106,13 +119,15 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 110px;
-    margin-top: 50px;
+    margin-top: 53px;
     width: 1220px;
-    margin-bottom: 124px;
+    margin-bottom: 119px;
   }
 
 
@@ -128,6 +143,12 @@
     height: 51px;
     margin: 0;
     padding: 0;
+  }
+
+  .page-header__logo {
+    display: block;
+    width: 202px;
+    height: 59px;
   }
 
   .page-header__main-nav {
