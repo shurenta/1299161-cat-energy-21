@@ -58,11 +58,11 @@
 .program-type__text {
   margin: 0;
   padding-bottom: 21px;
+  margin-bottom: 18px;
   border-bottom: 1px solid @border-dark-grey;
 }
 
 .program-type__link {
-  display: block;
   font-family: @oswald;
   font-size: 16px;
   line-height: 16px;
@@ -81,7 +81,7 @@
     height: 10px;
     background-image: url("../img/link-catalog.png");
     left: 101px;
-    top: 21px;
+    top: 28px;
   }
 }
 
@@ -96,14 +96,14 @@
 
 @media (min-width: @tablet-width) {
   .program-type {
-    width: 440px;
+    width: 410px;
     min-height: 230px;
     margin: 0 auto;
     background-color: @basic_grey;
     padding-top: 78px;
     padding-bottom: 57px;
-    padding-left: 30px;
-    padding-right: 238px;
+    padding-left: 18px;
+    padding-right: 280px;
   }
 
 
@@ -116,35 +116,26 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    margin-left: 24px;
+    margin-left: 35px;
     margin-bottom: 25px;
     text-align: left;
+    width: auto;
 
     &::before {
       display: none;
     }
   }
 
-  .program-type__title--weight-gain {
-    width: 210px;
-    padding-left: 0;
-  }
-
   .program-type__text {
     width: 377px;
     margin: 0;
-    margin-left: 24px;
+    margin-left: 35px;
     margin-bottom: 29px;
     border-bottom: none;
     color: @basic-black;
   }
 
-  .program-type__text--weight-gain {
-    width: 340px;
-  }
-
   .program-type__link {
-    width: 108px;
     font-family: @oswald;
     font-size: 20px;
     line-height: 30px;
@@ -152,7 +143,7 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    margin-left: 24px;
+    margin-left: 33px;
     padding-right: 50px;
 
     &::before {
@@ -176,7 +167,7 @@
       position: absolute;
       display: block;
       width: 200px;
-      height: 2011px;
+      height: 211px;
       background-image: url("../img/cat_back-1.png");
       background-repeat: no-repeat;
       left: 446px;
@@ -186,18 +177,34 @@
 
   .program-type--weight-gain {
     position: relative;
+    width: 380px;
+    padding-left: 28px;
+    padding-right: 300px;
 
     &::before {
       content: "";
       position: absolute;
       display: block;
       width: 268px;
-      height: 200px;
+      height: 211px;
       background-image: url("../img/cat_back-2.png");
       background-repeat: no-repeat;
       left: 411px;
       top: 91px;
     }
+  }
+
+  .program-type__text--weight-gain {
+    width: 340px;
+    margin-left: 25px;
+  }
+
+  .program-type__title--weight-gain {
+    margin-left: 25px;
+  }
+
+  .program-type__link--weight-gain {
+    margin-left: 25px;
   }
 }
 
@@ -277,7 +284,6 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    /*margin-left: 52px;*/
     padding-right: 60px;
 
 

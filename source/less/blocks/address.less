@@ -1,15 +1,13 @@
 .address {
-  width: 280px;
-  padding: 0 20px;
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 24px;
+  background-color: @basic-white;
 }
 
 .address__wrapper {
-  flex-wrap: wrap;
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .address__slogan {
@@ -29,8 +27,17 @@
 
 @media (min-width: @tablet-width) {
   .address {
-    width: 708px;
-    padding: 0 30px;
+    background-color: @basic-white;
+  }
+
+  .address__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 625px;
+    margin: 0 auto;
+    padding-top: 63px;
+    padding-bottom: 55px;
   }
 
   .address__slogan {
@@ -40,6 +47,7 @@
     text-transform: uppercase;
     color: @special-black;
     width: 160px;
+    margin: 0;
   }
 
   .address__text {
@@ -55,15 +63,6 @@
     display: block;
     margin-top: 19px;
   }
-
-  .address__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 67px;
-    padding-left: 40px;
-    padding-right: 42px;
-    padding-bottom: 55px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -72,7 +71,8 @@
     min-height: 400px;
     width: 1220px;
     padding: 0 110px;
-    margin-bottom: 0;
+    margin: 0 auto;
+    background-color: transparent;
   }
 
   .address__сity {
@@ -88,8 +88,8 @@
     position: absolute;
     top: 121px;
     left: 110px;
-    padding-bottom: 70px;
-    background-color: @basic-white;
+    padding-bottom: 73px;
+    background-color: white;
   }
 
   .address__slogan {
