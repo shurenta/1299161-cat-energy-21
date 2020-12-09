@@ -12,12 +12,43 @@
   margin: 0 auto;
 }
 
+.address__slogan {
+  font-family: @oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @special-black;
+  width: 140px;
+  margin: 0;
+}
+
+.address__text {
+  line-height: 20px;
+  width: 140px;
+  margin: 0;
+}
+
 @media (min-width: @tablet-width) {
   .address {
-    width: 707px;
+    width: 708px;
     padding: 0 30px;
-    padding-top: 70px;
-    padding-bottom: 58px;
+  }
+
+  .address__slogan {
+    font-family: @oswald;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @special-black;
+    width: 160px;
+  }
+
+  .address__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    padding: 0;
+    margin: 0;
+    text-align: right;
   }
 
   .address__сity {
@@ -28,6 +59,10 @@
   .address__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 67px;
+    padding-left: 40px;
+    padding-right: 42px;
+    padding-bottom: 55px;
   }
 }
 
@@ -46,11 +81,34 @@
   }
 
   .address__wrapper {
-    width: 570px;
+    width: 410px;
+    padding-top: 68px;
+    padding-left: 76px;
+    padding-right: 84px;
     position: absolute;
-    top: 95px;
+    top: 121px;
     left: 110px;
-    padding-bottom: 66px;
+    padding-bottom: 70px;
     background-color: @basic-white;
+  }
+
+  .address__slogan {
+    font-family: @oswald;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @special-black;
+    width: 160px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .address__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
   }
 }

@@ -1,8 +1,11 @@
 .program-type {
-  width: 280px;
+  width: 240px;
   background-color: @basic_grey;
   padding-top: 15px;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .program-type__title {
@@ -17,8 +20,9 @@
   margin: 0;
   text-align: center;
   padding-top: 15px;
-  padding-left: 85px;
-  padding-bottom: 30px;
+  padding-left: 66px;
+  padding-bottom: 16px;
+  margin-bottom: 14px;
 
   &::before {
     content: "";
@@ -28,7 +32,7 @@
     height: 53px;
     background-image: url("../img/cat_mobile-2.png");
     background-repeat: no-repeat;
-    left: 22px;
+    left: 2px;
     top: 6px;
   }
 }
@@ -36,7 +40,7 @@
 .program-type__title--weight-gain {
   width: 140px;
   position: relative;
-  padding-left: 90px;
+  padding-left: 70px;
 
   &::before {
     content: "";
@@ -46,13 +50,13 @@
     height: 50px;
     background-image: url("../img/cat_mobile-1.png");
     background-repeat: no-repeat;
-    left: 13px;
+    left: -7px;
     top: 9px;
   }
 }
 
 .program-type__text {
-  margin: 0 20px;
+  margin: 0;
   padding-bottom: 21px;
   border-bottom: 1px solid @border-dark-grey;
 }
@@ -64,7 +68,8 @@
   line-height: 16px;
   color: @basic-black;
   text-transform: uppercase;
-  margin-left: 20px;
+  width: 90px;
+  padding-right: 35px;
   padding-top: 21px;
   position: relative;
 
@@ -75,7 +80,7 @@
     width: 32px;
     height: 10px;
     background-image: url("../img/link-catalog.png");
-    right: 127px;
+    left: 101px;
     top: 21px;
   }
 }
@@ -91,11 +96,14 @@
 
 @media (min-width: @tablet-width) {
   .program-type {
-    width: 707px;
+    width: 440px;
+    min-height: 230px;
     margin: 0 auto;
     background-color: @basic_grey;
     padding-top: 78px;
     padding-bottom: 57px;
+    padding-left: 30px;
+    padding-right: 238px;
   }
 
 
@@ -108,8 +116,8 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    margin-left: 53px;
-    padding-bottom: 25px;
+    margin-left: 24px;
+    margin-bottom: 25px;
     text-align: left;
 
     &::before {
@@ -125,8 +133,8 @@
   .program-type__text {
     width: 377px;
     margin: 0;
-    margin-left: 52px;
-    padding-bottom: 51px;
+    margin-left: 24px;
+    margin-bottom: 29px;
     border-bottom: none;
     color: @basic-black;
   }
@@ -136,7 +144,7 @@
   }
 
   .program-type__link {
-    display: block;
+    width: 108px;
     font-family: @oswald;
     font-size: 20px;
     line-height: 30px;
@@ -144,7 +152,8 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    margin-left: 52px;
+    margin-left: 24px;
+    padding-right: 50px;
 
     &::before {
       content: "";
@@ -153,8 +162,8 @@
       width: 32px;
       height: 10px;
       background-image: url("../img/link-catalog.png");
-      right: 495px;
       top: 8px;
+      left: 132px;
     }
   }
 
@@ -170,7 +179,7 @@
       height: 2011px;
       background-image: url("../img/cat_back-1.png");
       background-repeat: no-repeat;
-      left: 445px;
+      left: 446px;
       top: 82px;
     }
   }
@@ -194,9 +203,12 @@
 
 @media (min-width: @desktop-width) {
   .program-type {
-    width: 570px;
+    width: 470px;
     padding: 0;
+    padding-top: 38px;
     padding-bottom: 59px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .program-type__title {
@@ -208,9 +220,10 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    padding-top: 80px;
-    padding-left: 214px;
-    padding-bottom: 75px;
+    padding-left: 165px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 34px;
     position: relative;
 
     &::before {
@@ -221,8 +234,8 @@
       height: 106px;
       background-image: url("../img/cat-desk-1.png");
       background-repeat: no-repeat;
-      left: 52px;
-      top: 45px;
+      left: 2px;
+      top: 5px;
     }
   }
 
@@ -230,14 +243,13 @@
     width: 470px;
     margin: 0;
     padding: 0;
-    margin-left: 51px;
     border-bottom: none;
     color: @basic-black;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
   }
 
   .program-type__title--weight-gain {
-    padding-left: 214px;
+    padding-left: 165px;
     position: relative;
 
     &::before {
@@ -248,8 +260,8 @@
       height: 100px;
       background-image: url("../img/cat-desk-2.png");
       background-repeat: no-repeat;
-      left: 33px;
-      top: 50px;
+      left: -17px;
+      top: 10px;
     }
   }
 
@@ -258,7 +270,6 @@
   }
 
   .program-type__link {
-    display: block;
     font-family: @oswald;
     font-size: 20px;
     line-height: 30px;
@@ -266,7 +277,9 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    margin-left: 52px;
+    /*margin-left: 52px;*/
+    padding-right: 60px;
+
 
     &::before {
       content: "";

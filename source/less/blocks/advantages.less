@@ -1,8 +1,11 @@
+.advantages {
+  margin-bottom: 28px;
+}
+
 .advantages__wrapper {
   width: 280px;
   padding: 0 20px;
   margin: 0 auto;
-  margin-bottom: 42px;
 }
 
 .advantages__title {
@@ -23,13 +26,9 @@
   padding-bottom: 4px;
 }
 
-.advantages__item-text {
-  margin: 0;
-}
-
 .advantages__item--one {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
@@ -46,7 +45,7 @@
 
 .advantages__item--two {
   position: relative;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 
   &::before {
     content: "";
@@ -90,14 +89,14 @@
     background-image: url("../img/group 4.png");
     left: 0;
     top: 50%;
-    margin-top: -29px;
+    margin-top: -36px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages {
     border-bottom: 1px solid @border-grey;
-    padding-bottom: 34px;
+    padding-bottom: 53px;
   }
 
   .advantages__wrapper {
@@ -116,25 +115,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 59px;
-    grid-row-gap: 29px;
     margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .advantages__item {
     position: relative;
-    padding-left: 0;
     margin: 0;
     width: 250px;
-    min-height: 280px;
-  }
-
-  .advantages__item-text {
-    margin: 0;
-    margin-top: 145px;
+    min-height: 120px;
+    padding: 0;
   }
 
   .advantages__item--one {
     position: relative;
+    padding-top: 150px;
 
     &::before {
       content: "";
@@ -144,7 +139,7 @@
       height: 80px;
       background-image: url("../img/group-1-tablet.png");
       left: 0;
-      top: 65px;
+      top: 66px;
     }
 
     &::after {
@@ -157,7 +152,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -6px;
+      top: 0;
       left: 118px;
       z-index: -1;
     }
@@ -165,6 +160,7 @@
 
   .advantages__item--two {
     position: relative;
+    padding-top: 150px;
 
     &::before {
       content: "";
@@ -174,7 +170,7 @@
       height: 80px;
       background-image: url("../img/group-2-tablet.png");
       left: 0;
-      top: 65px;
+      top: 66px;
     }
 
     &::after {
@@ -187,7 +183,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -6px;
+      top: 0;
       left: 111px;
       z-index: -1;
     }
@@ -196,6 +192,7 @@
   .advantages__item--three {
     position: relative;
     margin-bottom: 0;
+    padding-top: 196px;
 
     &::before {
       content: "";
@@ -205,7 +202,7 @@
       height: 80px;
       background-image: url("../img/group-3-tablet.png");
       left: 0;
-      top: 64px;
+      top: 114px;
     }
 
     &::after {
@@ -218,7 +215,7 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -4px;
+      top: 46px;
       left: 113px;
       z-index: -1;
     }
@@ -226,6 +223,7 @@
 
   .advantages__item--four {
     position: relative;
+    padding-top: 197px;
 
     &::before {
       content: "";
@@ -235,7 +233,7 @@
       height: 80px;
       background-image: url("../img/group-4-tablet.png");
       left: 0;
-      top: 63px;
+      top: 120px;
     }
 
     &::after {
@@ -248,17 +246,22 @@
       position: absolute;
       width: 112px;
       height: 280px;
-      top: -5px;
+      top: 45px;
       left: 113px;
       z-index: -1;
     }
+  }
+
+  .advantages__item-text {
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
     border: none;
-    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .advantages__wrapper {
@@ -266,7 +269,6 @@
     padding: 0 110px;
     margin: 0 auto;
     border: none;
-    margin-bottom: 20px;
   }
 
   .advantages__title {
@@ -285,14 +287,10 @@
   }
 
   .advantages__item {
-    width: 250px;
-    min-height: 295px;
+    width: 240px;
+    min-height: 118px;
     z-index: 2;
-  }
-
-  .advantages__item-text {
-    margin: 0;
-    margin-top: 181px;
+    padding-top: 187px;
   }
 
   .advantages__item--one {
@@ -328,7 +326,6 @@
 
   .advantages__item--two {
     position: relative;
-    width: 230px;
     margin: 0;
 
     &::before {
@@ -360,8 +357,8 @@
 
   .advantages__item--three {
     position: relative;
-    width: 220px;
     margin: 0;
+
 
     &::before {
       content: "";
@@ -392,9 +389,8 @@
 
   .advantages__item--four {
     position: relative;
-    margin: 0;
     width: 245px;
-
+    margin: 0;
 
     &::before {
       content: "";
@@ -404,7 +400,7 @@
       height: 80px;
       background-image: url("../img/group-4-tablet.png");
       left: 0;
-      top: 103px;
+      top: 110px;
     }
 
     &::after {
@@ -421,5 +417,9 @@
       left: 113px;
       z-index: -1;
     }
+  }
+
+  .advantages__item-text {
+    display: block;
   }
 }
