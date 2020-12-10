@@ -1,12 +1,67 @@
+.address {
+  background-color: @basic-white;
+}
+
 .address__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.address__slogan {
+  font-family: @oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: @special-black;
+  width: 140px;
+  margin: 0;
+}
+
+.address__text {
+  line-height: 20px;
+  width: 140px;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
+  .address {
+    background-color: @basic-white;
+  }
+
   .address__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: 625px;
+    margin: 0 auto;
+    padding-top: 63px;
+    padding-bottom: 55px;
+  }
+
+  .address__slogan {
+    font-family: @oswald;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @special-black;
+    width: 160px;
+    margin: 0;
+  }
+
+  .address__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+
+  .address__сity {
+    display: block;
+    margin-top: 19px;
   }
 }
 
@@ -14,12 +69,47 @@
   .address {
     position: relative;
     min-height: 400px;
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .address__сity {
+    display: block;
+    margin-top: 0;
   }
 
   .address__wrapper {
-    width: 570px;
+    width: 410px;
+    padding-top: 68px;
+    padding-left: 76px;
+    padding-right: 84px;
     position: absolute;
-    top: 85px;
-    background-color: @basic-white;
+    top: 121px;
+    left: 110px;
+    padding-bottom: 73px;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .address__slogan {
+    font-family: @oswald;
+    font-size: 20px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @special-black;
+    width: 160px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .address__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
   }
 }

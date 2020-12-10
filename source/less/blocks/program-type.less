@@ -1,32 +1,65 @@
 .program-type {
-  outline: 5px solid red;
-  outline-offset: -5px;
-  width: 280px;
-  padding: 0 20px;
+  width: 240px;
   background-color: @basic_grey;
-}
-
-@media (min-width: @tablet-width) {
-  .program-type {
-    width: 708px;
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .program-type {
-    width: 570px;
-    padding: 0;
-  }
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .program-type__title {
+  width: 120px;
+  position: relative;
   font-family: @oswald;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   color: @basic-black;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 66px;
+  padding-bottom: 16px;
+  margin-bottom: 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/cat_mobile-2.png");
+    background-repeat: no-repeat;
+    left: 2px;
+    top: 6px;
+  }
+}
+
+.program-type__title--weight-gain {
+  width: 140px;
+  position: relative;
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/cat_mobile-1.png");
+    background-repeat: no-repeat;
+    left: -7px;
+    top: 9px;
+  }
+}
+
+.program-type__text {
+  margin: 0;
+  padding-bottom: 21px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid @border-dark-grey;
 }
 
 .program-type__link {
@@ -34,8 +67,266 @@
   font-size: 16px;
   line-height: 16px;
   color: @basic-black;
+  text-transform: uppercase;
+  width: 90px;
+  padding-right: 35px;
+  padding-top: 21px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/link-catalog.png");
+    right: -14px;
+    top: 28px;
+  }
 }
 
-.program-type__text {
-  margin: 0;
+.program-type--slimming {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.program-type--weight-gain {
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .program-type {
+    width: 410px;
+    min-height: 230px;
+    margin: 0 auto;
+    background-color: @basic_grey;
+    padding-top: 78px;
+    padding-bottom: 57px;
+    padding-left: 18px;
+    padding-right: 280px;
+  }
+
+
+  .program-type__title {
+    font-family: @oswald;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: @basic-black;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-left: 35px;
+    margin-bottom: 25px;
+    text-align: left;
+    width: auto;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .program-type__text {
+    width: 377px;
+    margin: 0;
+    margin-left: 35px;
+    margin-bottom: 29px;
+    border-bottom: none;
+    color: @basic-black;
+  }
+
+  .program-type__link {
+    font-family: @oswald;
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic-black;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-left: 33px;
+    padding-right: 50px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 10px;
+      background-image: url("../img/link-catalog.png");
+      top: 8px;
+      right: -8px;
+    }
+  }
+
+  .program-type--slimming {
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 200px;
+      height: 211px;
+      background-image: url("../img/cat_back-1.png");
+      background-repeat: no-repeat;
+      left: 446px;
+      top: 82px;
+    }
+  }
+
+  .program-type--weight-gain {
+    position: relative;
+    width: 380px;
+    padding-left: 28px;
+    padding-right: 300px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 268px;
+      height: 211px;
+      background-image: url("../img/cat_back-2.png");
+      background-repeat: no-repeat;
+      left: 411px;
+      top: 91px;
+    }
+  }
+
+  .program-type__text--weight-gain {
+    width: 340px;
+    margin-left: 25px;
+  }
+
+  .program-type__title--weight-gain {
+    margin-left: 25px;
+  }
+
+  .program-type__link--weight-gain {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-type {
+    width: 470px;
+    padding: 0;
+    padding-top: 38px;
+    padding-bottom: 59px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .program-type__title {
+    font-family: @oswald;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    color: @basic-black;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    padding-left: 165px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 34px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100px;
+      height: 106px;
+      background-image: url("../img/cat-desk-1.png");
+      background-repeat: no-repeat;
+      left: 2px;
+      top: 5px;
+    }
+  }
+
+  .program-type__text {
+    width: 470px;
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+    color: @basic-black;
+    margin-bottom: 25px;
+  }
+
+  .program-type__title--weight-gain {
+    padding-left: 165px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 134px;
+      height: 100px;
+      background-image: url("../img/cat-desk-2.png");
+      background-repeat: no-repeat;
+      left: -17px;
+      top: 10px;
+    }
+  }
+
+  .program-type__text--weight-gain {
+    width: 450px;
+  }
+
+  .program-type__link {
+    font-family: @oswald;
+    font-size: 20px;
+    line-height: 30px;
+    color: @basic-black;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    padding-right: 60px;
+
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 10px;
+      background-image: url("../img/link-catalog.png");
+      right: -3px;
+      top: 8px;
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("../img/catalog-link-hover.png");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+
+  .program-type--slimming {
+    margin: 0;
+    position: relative;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .program-type--weight-gain {
+    position: relative;
+
+    &::before {
+      display: none;
+    }
+  }
 }

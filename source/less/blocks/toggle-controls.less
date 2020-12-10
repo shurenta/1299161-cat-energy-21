@@ -1,7 +1,113 @@
+.toggle-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-controls__scale {
+  width: 83px;
+  height: 13px;
+  border: 1px solid @toogle-border-grey;
+  border-radius: 6px;
+  background-color: @basic-white;
+  position: relative;
+  margin-left: 12px;
+  margin-right: 10px;
+}
+
+.toggle-controls__bar {
+  display: block;
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  border: none;
+  background-color: @basic_green;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+
 .toggle-controls__it-was-after {
+  border: none;
+  background-color: transparent;
   font-family: @oswald;
   color: @basic-black;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .toggle-controls {
+    align-items: center;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: min-content min-content min-content;
+  }
+
+  .toggle-controls__scale {
+    width: 428px;
+    height: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: @toogle-border-grey;
+    position: relative;
+    margin-left: 26px;
+    margin-right: 19px;
+  }
+
+  .toggle-controls__bar {
+    display: none;
+  }
+
+  .toggle-controls__it-was-after {
+    border: none;
+    border-bottom: 1px dotted @toogle-border-grey;
+    padding: 0;
+    background-color: @background-grey;
+    font-family: @oswald;
+    color: @basic-black;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .toggle-controls {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    margin-left: 110px;
+    grid-template-columns: min-content min-content min-content;
+  }
+
+  .toggle-controls__scale {
+    width: 428px;
+    height: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: @toogle-border-grey;
+    position: relative;
+    margin-left: 26px;
+    margin-right: 19px;
+  }
+
+  .toggle-controls__bar {
+    display: none;
+  }
+
+  .toggle-controls__it-was-after {
+    border: none;
+    border-bottom: 1px dotted @toogle-border-grey;
+    padding: 0;
+    background-color: @background-grey;
+    font-family: @oswald;
+    color: @basic-black;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
