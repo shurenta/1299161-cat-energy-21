@@ -53,6 +53,7 @@
 
 .form__input {
   flex-grow: 1;
+  width: 90px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 13px;
@@ -73,16 +74,17 @@
 .form__group--radio {
   border-top: 1px solid @border-dark-grey;
   border-bottom: 1px solid @border-dark-grey;
-  padding-top: 28px;
+  padding-top: 20px;
   margin-bottom: 6px;
-  padding-bottom: 25px;
+  padding-bottom: 17px;
 }
 
 .form__label-radio {
+  display: block;
   color: @special-grey;
   padding-left: 45px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 
@@ -94,7 +96,7 @@
 
 .form__program {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 
   &:last-child {
     margin-bottom: 0;
@@ -111,7 +113,7 @@
     border: 1px solid @toogle-border-grey;
     border-radius: 50%;
     left: 0;
-    bottom: 3px;
+    bottom: 1px;
     position: absolute;
     display: block;
   }
@@ -124,11 +126,11 @@
     content: "";
     position: absolute;
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     left: 8px;
-    bottom: 10px;
+    bottom: 8px;
     background-color: @basic_green;
   }
 }
@@ -158,7 +160,6 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   margin-bottom: 15px;
 
   &:last-child {
@@ -190,7 +191,7 @@
 
 .form__input--owner {
   border: 1px solid @toogle-border-grey;
-  padding-right: 20px;
+  padding-right: 50px;
 }
 
 .form__label--owner {
@@ -204,6 +205,7 @@
 
   &::before {
     content: "";
+    display: block;
     position: absolute;
     width: 49.4%;
     top: 15px;
@@ -235,11 +237,12 @@
 }
 
 .form__group--checkbox {
-  margin-bottom: 41px;
+  margin-bottom: 32px;
   position: relative;
 
   &::before {
     content: "";
+    display: block;
     position: absolute;
     width: 42%;
     top: 15px;
@@ -250,14 +253,14 @@
 }
 
 .form__legend--checkbox {
-  margin-bottom: 38px;
+  margin-bottom: 31px;
   width: 143px;
   padding-right: 20px;
 }
 
 .form__checkbox-greed {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 9px;
 
   &:last-child {
     margin-bottom: 0;
@@ -265,9 +268,10 @@
 }
 
 .form__label-checkbox {
+  display: block;
   padding-left: 46px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: @basic-black;
 }
 
@@ -282,7 +286,7 @@
     width: 28px;
     height: 28px;
     left: 0;
-    top: 1px;
+    top: 3px;
     border: 1px solid @toogle-border-grey;
   }
 }
@@ -297,7 +301,7 @@
     width: 18px;
     height: 14px;
     left: 6px;
-    bottom: 6px;
+    bottom: 8px;
     background-image: url("../img/vector-chek.png");
   }
 }
@@ -378,17 +382,18 @@
 
   .form__radio-grid {
     width: 586px;
-    padding-top: 29px;
-    padding-bottom: 30px;
+    padding-top: 22px;
+    padding-bottom: 23px;
     border: 1px solid @input-border-grey;
   }
 
   .form__program {
-    margin-bottom: 23px;
+    margin-bottom: 9px;
   }
 
   .form__label-radio {
     padding-left: 66px;
+    display: block;
   }
 
   .form__input-radio + .form__label-radio {
@@ -396,12 +401,12 @@
 
     &::before {
       content: "";
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       border: 1px solid @toogle-border-grey;
       border-radius: 50%;
       left: 7px;
-      bottom: -1px;
+      bottom: 1px;
       position: absolute;
       display: block;
     }
@@ -418,7 +423,7 @@
       height: 18px;
       border-radius: 50%;
       left: 19px;
-      bottom: 11px;
+      bottom: 13px;
       background-color: @basic_green;
     }
   }
@@ -426,10 +431,10 @@
   .form__group--cat-owner {
     margin-bottom: 65px;
     position: relative;
-    z-index: -1;
 
     &::before {
       content: "";
+      display: block;
       position: absolute;
       width: 100%;
       top: 22px;
@@ -486,6 +491,7 @@
     margin-bottom: 59px;
 
     &::before {
+      display: block;
       content: "";
       position: absolute;
       width: 100%;
@@ -516,7 +522,7 @@
 
   .form__group--checkbox {
     position: relative;
-    margin-bottom: 59px;
+    margin-bottom: 53px;
 
     &::before {
       content: "";
@@ -534,12 +540,13 @@
   .form__legend--checkbox {
     padding-left: 40px;
     padding-right: 20px;
-    margin-bottom: 63px;
+    margin-bottom: 57px;
     background: white;
     width: 232px;
   }
 
   .form__label-checkbox {
+    display: block;
     padding-left: 99px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -578,7 +585,7 @@
   .form__checkbox-wrapper {
     display: grid;
     grid-column-gap: 44px;
-    grid-row-gap: 42px;
+    grid-row-gap: 30px;
     grid-template-columns: min-content min-content;
     text-align: left;
   }
@@ -625,6 +632,7 @@
   .form__wrapper-cat-data {
     width: 1220px;
     margin: 0 auto;
+    padding: 0 110px;
     display: grid;
     grid-template-columns: min-content min-content;
     grid-column-gap: 80px;
@@ -647,17 +655,21 @@
     margin: 0;
   }
 
+  .form__program {
+    margin-bottom: 10px;
+  }
+
   .form__input-radio + .form__label-radio {
     position: relative;
 
     &::before {
       content: "";
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       border: 1px solid @toogle-border-grey;
       border-radius: 50%;
       left: 6px;
-      bottom: -3px;
+      bottom: 2px;
       position: absolute;
       display: block;
     }
@@ -668,13 +680,13 @@
 
     &::after {
       content: "";
-      position: absolute;
       display: block;
+      position: absolute;
       width: 18px;
       height: 18px;
       border-radius: 50%;
       left: 18px;
-      bottom: 10px;
+      bottom: 12px;
       background-color: @basic_green;
     }
   }
@@ -687,6 +699,7 @@
   .form__group--radio {
     padding: 0;
     margin: 0;
+    width: 570px;
   }
 
   .form__group--cat-owner {
@@ -706,7 +719,6 @@
   }
 
   .form__owner-data {
-    flex-grow: 0;
     display: flex;
     flex-wrap: wrap;
     width: 569px;
@@ -729,7 +741,7 @@
   }
 
   .form__group--checkbox {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   .form__checkbox-wrapper {
@@ -740,7 +752,7 @@
   }
 
   .form__label-checkbox {
-    padding: 0;
+    display: block;
     padding-left: 60px;
   }
 
@@ -752,6 +764,7 @@
   .form__legend--checkbox {
     margin-left: -40px;
     padding-left: 40px;
+    margin-bottom: 55px;
   }
 
   .form__checkbox + .form__label-checkbox {
@@ -759,12 +772,12 @@
 
     &::before {
       content: "";
-      position: absolute;
       display: block;
+      position: absolute;
       width: 38px;
       height: 38px;
       left: 0;
-      top: -6px;
+      top: 1px;
       border: 1px solid @toogle-border-grey;
     }
   }
@@ -779,7 +792,7 @@
       width: 18px;
       height: 14px;
       left: 11px;
-      bottom: 9px;
+      bottom: 13px;
       background-image: url("../img/vector-chek.png");
     }
   }
