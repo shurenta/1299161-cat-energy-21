@@ -3,13 +3,15 @@
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-bottom: 41px;
 }
 
 @media (min-width: @tablet-width) {
   .additional-goods {
     padding: 0;
-    width: 708px;
-    border: 1px solid black;
+    margin-bottom: 70px;
+    width: 706px;
+    border: 1px solid @toogle-border-grey;
   }
 }
 
@@ -17,7 +19,11 @@
   .additional-goods {
     width: 896px;
     border: none;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid @toogle-border-grey;
+    border-bottom: 1px solid @toogle-border-grey;
+  }
+
+  .catalog-additional-goods__catalog-wrapper {
+    margin-bottom: 0;
   }
 }
