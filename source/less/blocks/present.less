@@ -1,13 +1,14 @@
 .present {
   width: 280px;
-  height: 289px;
+  min-height: 274px;
   margin: 0 auto;
-  padding: 0 20px;
   background-color: @basic_green;
   background-image: url("../img/catalog-mobile.png");
   background-repeat: no-repeat;
-  background-size: 280px 289px;
   background-position: center;
+  background-size: 280px 100%;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
 }
 
 .present__text-pesent {
@@ -16,27 +17,95 @@
   color: @basic-white;
   padding: 0;
   margin: 0;
+  width: 161px;
+  text-align: center;
+  padding-top: 186px;
+  margin-left: 58px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icon_gift.png");
+    background-repeat: no-repeat;
+    top: 58px;
+    left: 44px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .present {
     width: 708px;
-    height: 200px;
-    padding: 0;
+    min-height: 129px;
+    margin: 0 auto;
+    padding-top: 61px;
+    padding-bottom: 10px;
+    background-color: @basic_green;
     background-image: url("../img/catalog-tablet.png");
-    background-size: 708px 200px;
+    background-size: 708px 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+  }
+
+  .present__text-pesent {
+    padding: 0;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 365px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 78px;
+      height: 80px;
+      background-image: url("../img/icon_gift.png");
+      background-repeat: no-repeat;
+      top: -5px;
+      left: 21px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .present {
     width: 245px;
-    height: 289px;
+    min-height: 279px;
     padding: 0;
     margin: 0;
     background-color: @basic_green;
     background-image: url("../img/catalog-mobile.png");
     background-repeat: no-repeat;
-    background-size: 245px 289px;
+    background-size: 245px 100%;
+  }
+
+  .present__text-pesent {
+    font-size: 16px;
+    line-height: 20px;
+    color: @basic-white;
+    padding: 0;
+    margin: 0;
+    width: 161px;
+    text-align: center;
+    padding-top: 186px;
+    margin-left: 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 78px;
+      height: 80px;
+      background-image: url("../img/icon_gift.png");
+      background-repeat: no-repeat;
+      top: 57px;
+      left: 48px;
+    }
   }
 }

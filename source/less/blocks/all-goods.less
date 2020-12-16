@@ -1,40 +1,212 @@
 .all-goods {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid @border-catalog;
+  margin-bottom: 25px;
 }
 
 .all-goods-wrapper {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 78px;
+  padding-bottom: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 39px;
+    left: 145px;
+    background-color: @color-all-goods;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: @color-all-goods;
+    transform: rotate(-90deg);
+    top: 40px;
+    left: 145px;
+  }
 }
 
 .all-goods__product {
+  display: block;
   font-family: @oswald;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   color: @special-black;
+  text-align: center;
+  font-weight: 400;
 }
 
 .all-goods__text {
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 21px;
 }
 
 .all-goods__button {
   color: @special-dark-grey;
+  display: block;
+  text-align: center;
   background-color: @basic_grey;
+  width: 259px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: @tablet-width) {
   .all-goods {
-    border: 1px solid black;
-    width: 324px;
+    border: 2px solid @basic_grey;
+    width: 320px;
+    height: auto;
+    margin: 0;
+    margin-top: 102px;
+    padding: 0;
+  }
+
+  .all-goods-wrapper {
+    padding: 0;
+    padding-top: 160px;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      top: 80px;
+      left: 130px;
+      background-color: @color-all-goods;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: @color-all-goods;
+      transform: rotate(-90deg);
+      top: 80px;
+      left: 130px;
+    }
+  }
+
+  .all-goods__product {
+    width: 140px;
+    text-align: center;
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+
+  .all-goods__text {
+    margin: 0;
+    text-align: center;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 75px;
+    margin-bottom: 85px;
+  }
+
+  .all-goods__button {
+    color: @special-dark-grey;
+    display: block;
+    text-align: center;
+    background-color: @basic_grey;
+    width: 228px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 37px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .all-goods {
-    width: 245px;
+    width: 241px;
+    height: auto;
+    margin-top: 107px;
+    padding-bottom: 20px;
+  }
+
+  .all-goods-wrapper {
+    padding: 0;
+    padding-top: 158px;
+    margin: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      top: 79px;
+      left: 90px;
+      background-color: @color-all-goods;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: @color-all-goods;
+      transform: rotate(-90deg);
+      top: 79px;
+      left: 91px;
+    }
+  }
+
+  .all-goods__product {
+    width: 140px;
+    text-align: center;
+    margin-left: 52px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+
+  .all-goods__text {
+    margin: 0;
+    text-align: center;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 35px;
+    margin-bottom: 86px;
+  }
+
+  .all-goods__button {
+    color: @special-dark-grey;
+    display: block;
+    text-align: center;
+    background-color: @basic_grey;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 36px;
   }
 }
