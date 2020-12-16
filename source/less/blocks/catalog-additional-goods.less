@@ -13,16 +13,17 @@
 
 .catalog-additional-goods--line {
   position: relative;
-}
 
-.catalog-additional-goods--line::before {
-  content: "";
-  position: absolute;
-  width: 17%;
-  top: 14px;
-  right: 0;
-  height: 3px;
-  background-color: @basic_green;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 17%;
+    top: 14px;
+    right: 0;
+    height: 3px;
+    background-color: @basic_green;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -48,14 +49,19 @@
     line-height: 36px;
   }
 
-  .catalog-additional-goods--line::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    top: 21px;
-    right: 0;
-    height: 3px;
-    background-color: @basic_green;
+  .catalog-additional-goods--line {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 21px;
+      right: 0;
+      height: 3px;
+      background-color: @basic_green;
+    }
   }
 }
 
@@ -87,5 +93,20 @@
 
   .catalog-additional-goods {
     margin-bottom: 16px;
+  }
+
+  .catalog-additional-goods--line {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 21px;
+      right: 0;
+      height: 3px;
+      background-color: @basic_green;
+    }
   }
 }
