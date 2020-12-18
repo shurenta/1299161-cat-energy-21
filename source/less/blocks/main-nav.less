@@ -5,12 +5,27 @@
   padding: 0;
 }
 
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+  }
+}
+
+
 @media (min-width: @tablet-width) {
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
     width: 449px;
     margin-top: 19px;
+  }
+
+  .main-nav--closed {
+    display: flex;
   }
 }
 
@@ -19,5 +34,9 @@
     width: 478px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .main-nav--closed {
+    display: flex;
   }
 }

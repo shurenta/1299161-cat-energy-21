@@ -30,7 +30,7 @@
     display: block;
     width: 50px;
     height: 53px;
-    background-image: url("../img/cat_mobile-2.png");
+    background-image: url("../img/cat_back-index-mobile-2.svg");
     background-repeat: no-repeat;
     left: 2px;
     top: 6px;
@@ -48,7 +48,7 @@
     display: block;
     width: 67px;
     height: 50px;
-    background-image: url("../img/cat_mobile-1.png");
+    background-image: url("../img/cat_back-index-mobile-1.svg");
     background-repeat: no-repeat;
     left: -7px;
     top: 9px;
@@ -57,7 +57,7 @@
 
 .program-type__text {
   margin: 0;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   margin-bottom: 19px;
   border-bottom: 1px solid @border-dark-grey;
 }
@@ -77,9 +77,23 @@
     position: absolute;
     width: 32px;
     height: 10px;
-    background-image: url("../img/link-catalog.png");
+    background-image: url("../img/icon_arrow-mobile.svg");
     right: -7px;
     top: 6px;
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("../img/icon_arrow-hover-mobile.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
   }
 }
 
@@ -99,7 +113,7 @@
     margin: 0 auto;
     background-color: @basic_grey;
     padding-top: 78px;
-    padding-bottom: 57px;
+    padding-bottom: 55px;
     padding-left: 18px;
     padding-right: 280px;
   }
@@ -150,14 +164,14 @@
       position: absolute;
       width: 32px;
       height: 10px;
-      background-image: url("../img/link-catalog.png");
+      background-image: url("../img/icon_arrow-mobile.svg");
       top: 8px;
       right: -8px;
     }
   }
 
   .program-type--slimming {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     position: relative;
 
     &::before {
@@ -166,7 +180,7 @@
       display: block;
       width: 200px;
       height: 211px;
-      background-image: url("../img/cat_back-1.png");
+      background-image: url("../img/cat_back-index-tablet-2.svg");
       background-repeat: no-repeat;
       left: 446px;
       top: 82px;
@@ -185,9 +199,9 @@
       display: block;
       width: 268px;
       height: 211px;
-      background-image: url("../img/cat_back-2.png");
+      background-image: url("../img/cat_back-index-tablet-1.svg");
       background-repeat: no-repeat;
-      left: 411px;
+      left: 412px;
       top: 91px;
     }
   }
@@ -237,7 +251,7 @@
       display: block;
       width: 100px;
       height: 106px;
-      background-image: url("../img/cat-desk-1.png");
+      background-image: url("../img/cat_back-index-2.svg");
       background-repeat: no-repeat;
       left: 2px;
       top: 5px;
@@ -263,7 +277,7 @@
       display: block;
       width: 134px;
       height: 100px;
-      background-image: url("../img/cat-desk-2.png");
+      background-image: url("../img/cat_back-index-1.svg");
       background-repeat: no-repeat;
       left: -17px;
       top: 10px;
@@ -291,14 +305,14 @@
       position: absolute;
       width: 32px;
       height: 10px;
-      background-image: url("../img/link-catalog.png");
+      background-image: url("../img/icon_arrow-mobile.svg");
       right: -3px;
       top: 8px;
     }
 
     &:hover {
       &::before {
-        background-image: url("../img/catalog-link-hover.png");
+        background-image: url("../img/icon_arrow-hover-mobile.svg");
       }
     }
 

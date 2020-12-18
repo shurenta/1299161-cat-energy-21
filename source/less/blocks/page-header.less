@@ -55,7 +55,9 @@
   margin-top: 12px;
   background-color: @basic-white;
   display: block;
+}
 
+.page-header__toggle--opened {
   &::before,
   &::after {
     content: "";
@@ -74,6 +76,24 @@
 
   &::after {
     transform: rotate(-45deg);
+  }
+}
+
+.page-header__toggle--closed {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    right: 0;
+    bottom: 16px;
+    background-color: @basic-black;
+    display: block;
+    box-shadow:
+      0 8px 0 0 fade(@basic-black, 100%),
+      0 16px 0 0 fade(@basic-black, 100%);
   }
 }
 
@@ -142,8 +162,8 @@
   }
 
   .page-header__logo-image {
-    width: 174px;
-    height: 51px;
+    width: 202px;
+    height: 59px;
     margin: 0;
     padding: 0;
   }
