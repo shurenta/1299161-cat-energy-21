@@ -13,15 +13,22 @@
   .main-nav--opened {
     display: block;
   }
+
+  .main-nav--nojs {
+    display: block;
+  }
 }
 
 
 @media (min-width: @tablet-width) {
+  .main-nav {
+    margin-top: 19px;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
     width: 449px;
-    margin-top: 19px;
   }
 
   .main-nav--closed {

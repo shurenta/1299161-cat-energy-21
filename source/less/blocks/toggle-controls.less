@@ -36,6 +36,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -63,15 +64,24 @@
   }
 
   .toggle-controls__it-was-after {
-    border: none;
     border-bottom: 1px dotted @toogle-border-grey;
     padding: 0;
     background-color: @background-grey;
-    font-family: @oswald;
-    color: @basic-black;
-    text-transform: uppercase;
     font-size: 20px;
     line-height: 30px;
+    outline: none;
+
+    &:hover {
+      border-bottom: 1px solid @toogle-border-grey;
+    }
+
+    &:focus {
+      border-bottom: 1px solid @toogle-border-grey;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
