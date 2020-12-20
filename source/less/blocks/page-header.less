@@ -13,36 +13,35 @@
 }
 
 
-.page__header-wrapper {
+.page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 14px;
   margin-top: 12px;
   border-bottom: 1px solid @border-grey;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .page-header__logo {
   display: block;
   width: 190px;
   height: 39px;
+  margin-right: 70px;
 }
 
 .page-header__logo-image {
   width: 190px;
   height: 39px;
 
-  &:hover {
+  &:hover[href] {
     opacity: 80%;
   }
 
-  &:active {
+  &:active[href] {
     opacity: 60%;
   }
 
-  &:focus {
+  &:focus[href] {
     opacity: 60%;
   }
 }
@@ -55,6 +54,11 @@
   margin-top: 12px;
   background-color: @basic-white;
   display: block;
+  outline: none;
+}
+
+.page-header__toggle--opened {
+  position: relative;
 
   &::before,
   &::after {
@@ -63,8 +67,8 @@
     display: block;
     width: 24px;
     height: 2px;
-    right: 20px;
-    top: 31px;
+    right: 0;
+    top: 7px;
     background-color: @basic-black;
   }
 
@@ -77,6 +81,28 @@
   }
 }
 
+.page-header__toggle--closed {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    right: 0;
+    bottom: 16px;
+    background-color: @basic-black;
+    display: block;
+    box-shadow:
+      0 8px 0 0 fade(@basic-black, 100%),
+      0 16px 0 0 fade(@basic-black, 100%);
+  }
+}
+
+.page-header__toggle--nojs {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-header {
     display: grid;
@@ -85,11 +111,11 @@
     margin: 0 auto;
     padding: 0 30px;
     padding-top: 25px;
-    margin-bottom: 62px;
+    margin-bottom: 52px;
     width: 708px;
   }
 
-  .page__header-wrapper {
+  .page-header__wrapper {
     display: block;
     padding: 0;
     margin: 0;
@@ -122,11 +148,11 @@
   .page-header {
     display: grid;
     grid-template-columns: min-content 1fr;
-    grid-column-gap: 540px;
+    grid-column-gap: 470px;
     padding: 0 110px;
     margin-top: 50px;
     width: 1220px;
-    margin-bottom: 116px;
+    margin-bottom: 110px;
   }
 
   .page-header--form {
@@ -142,8 +168,8 @@
   }
 
   .page-header__logo-image {
-    width: 174px;
-    height: 51px;
+    width: 202px;
+    height: 59px;
     margin: 0;
     padding: 0;
   }
