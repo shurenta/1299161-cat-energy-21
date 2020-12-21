@@ -35,7 +35,7 @@
 .form__group--grid {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding: 0 20px;
 }
 
@@ -44,19 +44,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   &:last-child {
-    margin-bottom: 3px;
+    margin-bottom: 0;
   }
 }
 
 .form__input {
   flex-grow: 1;
   width: 90px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 10px;
   border: solid 1px @input-border-grey;
   text-transform: uppercase;
   color: @special-dark-grey;
@@ -68,17 +69,21 @@
   &:focus {
     outline: none;
     border: 2px solid @special-dark-grey;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 11px;
   }
 
-  &:invalid {
+  &:focus:invalid,
+  &:not(:placeholder-shown):not(:focus):invalid {
     border: 2px solid @input-invalid;
   }
 
-  &:invalid + .form__icon-email {
+  &:focus:invalid + .form__icon-email {
     stroke: @input-invalid;
   }
 
-  &:invalid + .form__icon-tel {
+  &:focus:invalid + .form__icon-tel {
     stroke: @input-invalid;
   }
 
@@ -88,6 +93,7 @@
 
   &:focus + .form__icon-tel {
     stroke: @basic_green;
+    fill: @basic_green;
   }
 }
 
@@ -111,7 +117,7 @@
   border-bottom: 1px solid @border-dark-grey;
   padding-top: 20px;
   margin-bottom: 6px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 }
 
 .form__label-radio {
@@ -174,8 +180,8 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    left: 8px;
-    bottom: 8px;
+    left: 9px;
+    bottom: 9px;
     background-color: @basic_green;
   }
 }
@@ -241,9 +247,13 @@
 
 .form__input--owner {
   border: 1px solid @toogle-border-grey;
-  padding-right: 50px;
+  padding-right: 45px;
   padding-left: 15px;
-  padding-top: 9px;
+  padding-top: 12px;
+
+  &:focus {
+    padding-left: 14px;
+  }
 }
 
 .form__label--owner {
@@ -289,8 +299,16 @@
   border: 1px solid @input-border-grey;
   outline: none;
 
+  &:hover {
+    border-color: @toogle-border-grey;
+  }
+
   &:focus {
     border: 2px solid @special-dark-grey;
+    padding-top: 8px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 9px;
   }
 }
 
@@ -440,9 +458,17 @@
   }
 
   .form__input {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 14px;
+    padding-bottom: 13px;
     padding-left: 19px;
+
+    &:focus {
+      outline: none;
+      border: 2px solid @special-dark-grey;
+      padding-top: 13px;
+      padding-bottom: 12px;
+      padding-left: 18px;
+    }
   }
 
   .form__group--radio {
@@ -496,8 +522,8 @@
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      left: 19px;
-      bottom: 13px;
+      left: 18px;
+      bottom: 12px;
       background-color: @basic_green;
     }
   }
@@ -567,7 +593,7 @@
 
   .form__group--textarea {
     position: relative;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
 
     &::before {
       display: block;
@@ -597,6 +623,11 @@
     padding-top: 12px;
     padding-left: 18px;
     margin-left: 40px;
+
+    &:focus {
+      padding-top: 11px;
+      padding-left: 17px;
+    }
   }
 
   .form__group--checkbox {
@@ -721,14 +752,26 @@
 
   .form__input {
     padding-left: 21px;
+
+    &:focus {
+      padding-left: 20px;
+    }
   }
 
   .form__input--tel {
     padding-left: 17px;
+
+    &:focus {
+      padding-left: 16px;
+    }
   }
 
   .form__input--age {
     padding-left: 17px;
+
+    &:focus {
+      padding-left: 16px;
+    }
   }
 
   .form__grid {
@@ -756,12 +799,12 @@
 
     &::before {
       content: "";
-      width: 38px;
-      height: 38px;
+      width: 37px;
+      height: 37px;
       border: 1px solid @toogle-border-grey;
       border-radius: 50%;
-      left: 6px;
-      bottom: 2px;
+      left: 8px;
+      bottom: 4px;
       position: absolute;
       display: block;
     }
@@ -777,7 +820,7 @@
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      left: 18px;
+      left: 19px;
       bottom: 14px;
       background-color: @basic_green;
     }
@@ -818,7 +861,7 @@
   }
 
   .form__group--textarea {
-    margin-bottom: 67px;
+    margin-bottom: 62px;
   }
 
   .form__legend--textarea {
