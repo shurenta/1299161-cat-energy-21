@@ -37,6 +37,10 @@
   .page-body--image {
     background-image: none;
 
+    @media (min-resolution: 2dppx) {
+      background-image: none;
+    }
+
     &::before {
       display: none;
     }
