@@ -8,6 +8,15 @@
   flex-direction: column;
 }
 
+.form__input[type="number"] {
+  appearance: textfield;
+}
+
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
 .form__group {
   border: none;
   padding: 0;
@@ -469,6 +478,7 @@
     padding-top: 14px;
     padding-bottom: 13px;
     padding-left: 19px;
+    height: 23px;
 
     &:focus {
       outline: none;
@@ -483,6 +493,7 @@
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 20px;
+    height: 23px;
 
     &:focus {
       padding-top: 12px;
@@ -780,6 +791,7 @@
 
   .form__input {
     padding-left: 21px;
+    height: 23px;
 
     &:focus {
       padding-left: 20px;
@@ -790,6 +802,7 @@
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 20px;
+    height: 23px;
 
     &:focus {
       padding-top: 12px;
