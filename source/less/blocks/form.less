@@ -85,6 +85,7 @@
 
   &:focus:invalid + .form__icon-tel {
     stroke: @input-invalid;
+    fill: @input-invalid;
   }
 
   &:focus + .form__icon-email {
@@ -253,6 +254,13 @@
 
   &:focus {
     padding-left: 14px;
+  }
+
+  &:focus:invalid,
+  &:not(:placeholder-shown):not(:focus):invalid {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 11px;
   }
 }
 
@@ -454,7 +462,7 @@
   .form__grid {
     width: 630px;
     margin-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .form__input {
@@ -468,6 +476,26 @@
       padding-top: 13px;
       padding-bottom: 12px;
       padding-left: 18px;
+    }
+  }
+
+  .form__input--owner {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+
+    &:focus {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 19px;
+    }
+
+    &:focus:invalid,
+    &:not(:placeholder-shown):not(:focus):invalid {
+      border: 2px solid @input-invalid;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 19px;
     }
   }
 
@@ -758,11 +786,23 @@
     }
   }
 
-  .form__input--tel {
-    padding-left: 17px;
+  .form__input--owner {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 20px;
 
     &:focus {
-      padding-left: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 19px;
+    }
+
+    &:focus:invalid,
+    &:not(:placeholder-shown):not(:focus):invalid {
+      border: 2px solid @input-invalid;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 19px;
     }
   }
 
