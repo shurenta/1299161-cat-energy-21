@@ -3,12 +3,19 @@
   min-height: 274px;
   margin: 0 auto;
   background-color: @basic_green;
-  background-image: url("../img/catalog-mobile.png");
+  background-image: url("../img/gift-photo-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 280px 100%;
   margin-bottom: 35px;
   padding-bottom: 15px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280px 100%;
+  }
 }
 
 .present__text-pesent {
@@ -29,7 +36,7 @@
     position: absolute;
     width: 78px;
     height: 80px;
-    background-image: url("../img/icon_gift.png");
+    background-image: url("../img/icon_gift.svg");
     background-repeat: no-repeat;
     top: 58px;
     left: 44px;
@@ -44,11 +51,19 @@
     padding-top: 61px;
     padding-bottom: 10px;
     background-color: @basic_green;
-    background-image: url("../img/catalog-tablet.png");
+    background-image: url("../img/gift-photo-tablet.png");
     background-size: 708px 100%;
     background-repeat: no-repeat;
     background-position: top;
     position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 708px 100%;
+      background-position: top;
+      position: relative;
+    }
   }
 
   .present__text-pesent {
@@ -64,7 +79,7 @@
       position: absolute;
       width: 78px;
       height: 80px;
-      background-image: url("../img/icon_gift.png");
+      background-image: url("../img/icon-gift-tablet.svg");
       background-repeat: no-repeat;
       top: -5px;
       left: 21px;
@@ -79,9 +94,15 @@
     padding: 0;
     margin: 0;
     background-color: @basic_green;
-    background-image: url("../img/catalog-mobile.png");
+    background-image: url("../img/gift-photo-desktop@2x.png");
     background-repeat: no-repeat;
     background-size: 245px 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.png");
+      background-repeat: no-repeat;
+      background-size: 245px 100%;
+    }
   }
 
   .present__text-pesent {
@@ -102,10 +123,10 @@
       position: absolute;
       width: 78px;
       height: 80px;
-      background-image: url("../img/icon_gift.png");
+      background-image: url("../img/icon-gift-tablet.svg");
       background-repeat: no-repeat;
       top: 57px;
-      left: 48px;
+      left: 43px;
     }
   }
 }
