@@ -51,11 +51,24 @@
   padding: 0;
 }
 
-.card__link {
+.card__link--min {
   display: block;
   margin-right: 35px;
+  margin-left: 36px;
+  margin-top: 13px;
+}
+
+.card__link--fish {
+  margin-top: 27px;
+}
+
+.card__link--buckwheat {
+  margin-top: 29px;
+}
+
+.card__link--rice {
+  margin-top: 22px;
   margin-left: 33px;
-  margin-top: 14px;
 }
 
 .card__link--max {
@@ -80,7 +93,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    padding-bottom: 38px;
+    padding-bottom: 40px;
     flex-direction: column;
   }
 
@@ -101,11 +114,11 @@
   }
 
   .card__link--max {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   .card__image--min {
-    width: 130px;
+    width: 161px;
     height: 172px;
   }
 
@@ -120,6 +133,7 @@
     margin: 0 auto;
     font-size: 20px;
     line-height: 24px;
+    margin-left: 58px;
     margin-bottom: 19px;
   }
 
@@ -152,7 +166,8 @@
 @media (min-width: @desktop-width) {
   .card {
     width: 245px;
-    padding-bottom: 39px;
+    padding-bottom: 42px;
+    background-image: linear-gradient(@basic-white 19.6%, @background-grey 19.6%);
   }
 
   .card__wrapper {
@@ -162,11 +177,13 @@
   }
 
   .card__link--min {
-    margin-bottom: 40px;
+    margin-top: 33px;
+    margin-bottom: 41px;
   }
 
   .card__link--max {
-    margin-bottom: 37px;
+    margin-top: 7px;
+    margin-bottom: 40px;
   }
 
   .card__title {
@@ -174,6 +191,7 @@
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
 
   .card__list {
