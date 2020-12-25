@@ -1,12 +1,11 @@
-var imageAfter = document.querySelector('.example__image-it-was');
-var imageBefore = document.querySelector('.example__image-after');
-
-var toogleBefore = document.querySelector('.toggle-controls__it-was-after--before');
-var toogleAfter = document.querySelector('.toggle-controls__it-was-after--after');
-
-var controlsBar = document.querySelector('.toggle-controls__bar');
-
 if(document.querySelector('.example__photo')) {
+  var imageAfter = document.querySelector('.example__image-it-was');
+  var imageBefore = document.querySelector('.example__image-after');
+
+  var toogleBefore = document.querySelector('.toggle-controls__it-was-after--before');
+  var toogleAfter = document.querySelector('.toggle-controls__it-was-after--after');
+
+  var controlsBar = document.querySelector('.toggle-controls__bar');
   toogleAfter.addEventListener('click', function() {
     if (imageBefore.classList.contains('example__image--invisible')) {
       imageBefore.classList.remove('example__image--invisible');

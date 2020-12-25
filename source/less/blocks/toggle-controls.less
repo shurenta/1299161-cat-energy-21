@@ -16,7 +16,7 @@
   margin-right: 17px;
 }
 
-.toggle-controls__bar--before {
+.toggle-controls__bar {
   display: block;
   width: 35px;
   height: 6px;
@@ -24,18 +24,14 @@
   border: none;
   background-color: @basic_green;
   position: absolute;
+}
+
+.toggle-controls__bar--before {
   top: 3px;
   left: 5px;
 }
 
 .toggle-controls__bar--after {
-  display: block;
-  width: 35px;
-  height: 6px;
-  border-radius: 6px;
-  border: none;
-  background-color: @basic_green;
-  position: absolute;
   top: 3px;
   right: 5px;
 }
@@ -73,7 +69,50 @@
   }
 
   .toggle-controls__bar {
-    display: none;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: @basic-white;
+    border: 1px solid @toogle-border-grey;
+    box-shadow: 0 1px 3px @toogle-shadow;
+    outline: none;
+
+    &:hover {
+      box-shadow: 0 2px 4px @toogle-shadow-hover;
+    }
+
+    &:focus {
+      box-shadow: 0 2px 4px @toogle-shadow-hover;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px @toogle-shadow-active;
+      border-color: @basic_green;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: @basic_green;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+  }
+
+  .toggle-controls__bar--after {
+    right: 10px;
+    top: -16px;
+  }
+
+  .toggle-controls__bar--before {
+    left: 10px;
+    top: -16px;
   }
 
   .toggle-controls__it-was-after {
@@ -115,10 +154,6 @@
     position: relative;
     margin-left: 26px;
     margin-right: 19px;
-  }
-
-  .toggle-controls__bar {
-    display: none;
   }
 
   .toggle-controls__it-was-after {
