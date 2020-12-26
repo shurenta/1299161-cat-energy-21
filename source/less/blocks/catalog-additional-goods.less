@@ -67,11 +67,12 @@
 
 @media (min-width: @desktop-width) {
   .catalog-additional-goods__catalog-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 896px 245px;
+    grid-column-gap: 79px;
     width: 1220px;
-    padding: 0 110px;
     margin: 0 auto;
+    padding: 0 110px;
   }
 
   .catalog-additional-goods {
