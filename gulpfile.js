@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify-es");
+const uglify =require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const concat = require("gulp-concat");
@@ -20,6 +20,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
@@ -45,7 +46,8 @@ const html = () => {
 const scripts = () => {
   return gulp.src("source/js/*.js")
     .pipe(concat('all.js'))
-    // .pipe(uglify())
+    .pipe(gulp.dest("build/js"))
+    .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());

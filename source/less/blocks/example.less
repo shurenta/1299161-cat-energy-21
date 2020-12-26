@@ -131,7 +131,17 @@
   .example {
     padding: 0;
     margin-bottom: 0;
-    background-image: linear-gradient(@basic-white 31%, @background-grey 31%);
+    margin-top: 214px;
+    /*background-image: linear-gradient(@basic-white 31%, @background-grey 31%);*/
+  /*  background-image: linear-gradient(to right, @basic_grey 49%, @background-grey 30%);*/
+  }
+
+  .example--before {
+    background-image: linear-gradient(to right, @basic_grey 49%, @background-grey 30%);
+  }
+
+  .example--after {
+     background-image: linear-gradient(to right, @basic_grey 100%, @background-grey);
   }
 
   .example__wrapper {
@@ -149,7 +159,8 @@
   }
 
   .example__container {
-    margin-bottom: 45px;
+    margin-top: -195px;
+   /* margin-bottom: 45px;*/
   }
 
   .example__title {
@@ -194,7 +205,8 @@
   }
 
   .example__photo {
-    margin-top: 3px;
+    margin-top: -192px;
+   /* margin-top: 3px;*/
   }
 
   .example__image-it-was {
